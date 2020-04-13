@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>ML - liyao碎片机</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ML";
+    var mkdocs_page_input_path = "machine_learning.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> liyao碎片机</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Index</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r/">R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux/">Linux</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux_cmd/">Linux_cmd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cmd_line/">Cmd_line</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_python/">Awe_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_spider/">Awe_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data_science2/">Data_science</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">ML</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#marchine-learning">Marchine Learning</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#doc">Doc</a></li>
+        
+            <li><a class="toctree-l3" href="#courses">Courses</a></li>
+        
+            <li><a class="toctree-l3" href="#random-forest">Random Forest</a></li>
+        
+            <li><a class="toctree-l3" href="#gradient-boosting">gradient boosting</a></li>
+        
+            <li><a class="toctree-l3" href="#dimensionality-reduction">Dimensionality reduction</a></li>
+        
+            <li><a class="toctree-l3" href="#clustering">Clustering</a></li>
+        
+            <li><a class="toctree-l3" href="#benchmark">benchmark</a></li>
+        
+            <li><a class="toctree-l3" href="#neural-network">Neural Network</a></li>
+        
+            <li><a class="toctree-l3" href="#deep-learning">Deep Learning</a></li>
+        
+            <li><a class="toctree-l3" href="#optimization">Optimization</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ml_tutor/">ML_tutor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysql_chefs/">Mysql_chefs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../21m_mysql/">Mysql_21m</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../math/">Math</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../statistic_python/">Statistic_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dm_da/">DM_DA</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sci/">Sci</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../utilities/">Uti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../web/">Web</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ajenti/">ajenti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../macos_app/">Macos_app</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r4ds/">r4ds</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python_spider/">Python_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../p_books/">P_books</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">liyao碎片机</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>ML</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="marchine-learning">Marchine Learning</h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#doc">Doc</a></li>
+<li><a href="#random-forest">Random Forest</a></li>
+<li><a href="gradient-boosting">Gradient boosting</a></li>
+<li><a href="#dimensionality-reduction">Dimensionality reduction</a></li>
+<li><a href="#clustering">Clustering</a></li>
+<li><a href="#benchmark">benchmark</a></li>
+<li><a href="#neural-network">Neural Network</a></li>
+<li><a href="#deep-learning">Deep Learning</a></li>
+<li><a href="#optimization">Optimization</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2 id="doc">Doc</h2>
+<ul>
+<li><a href="http://www.iro.umontreal.ca/~pift6266/H10/notes/mlintro.html">Very Brief Introduction to Machine Learning for AI</a></li>
+<li><a href="http://setosa.io/blog/2014/07/26/markov-chains/index.html">Markov Chains</a></li>
+<li><a href="https://www.quora.com/What-are-the-advantages-of-different-classification-algorithms">What are the advantages of different classification algorithms?</a></li>
+<li><a href="http://www.comp.nus.edu.sg/~stevenha/visualization/index.html">VisuAlgo</a> - visualising data structures and algorithms through animation</li>
+<li><a href="https://oj.leetcode.com/problems/">https://oj.leetcode.com/problems/</a></li>
+<li><a href="http://www.analyticsvidhya.com/blog/2015/09/slideshare-presentations-data-science/">My recommendations – SlideShare Presentations on Data Science</a></li>
+<li><a href="http://www.ctocio.com/hotnews/15919.html">机器学习常见算法分类汇总</a></li>
+<li><a href="http://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/">A Tour of Machine Learning Algorithms</a> | <a href="http://blog.jobbole.com/60809/">机器学习算法之旅</a></li>
+<li><strong> <a href="https://github.com/hangtwenty/dive-into-machine-learning">dive-into-machine-learning</a></strong></li>
+<li><a href="http://machinelearningmastery.com/machine-learning-roadmap-your-self-study-guide-to-machine-learning/">Machine Learning Roadmap: Your Self-Study Guide to Machine Learning</a></li>
+<li><a href="http://www.52ml.net/15063.html">如何选择机器学习算法</a></li>
+<li><a href="http://blog.csdn.net/longxinchen_ml/article/details/50471268">机器学习系列(4)_机器学习算法一览，应用建议与解决思路</a></li>
+<li><a href="http://jeffreydf.github.io/diabetic-retinopathy-detection/">Detecting diabetic retinopathy in eye images</a></li>
+<li><a href="http://www.analyticsvidhya.com/blog/2015/09/full-cheatsheet-machine-learning-algorithms/">Cheatsheet – Python &amp; R codes for common Machine Learning Algorithms</a></li>
+<li><strong><a href="http://blog.jobbole.com/92021/">10 种机器学习算法的要点（附 Python 和 R 代码）</a> | <a href="http://www.analyticsvidhya.com/blog/2015/08/common-machine-learning-algorithms/">Essentials of Machine Learning Algorithms (with Python and R Codes)</a></strong></li>
+<li><a href="https://github.com/ledell/useR-machine-learning-tutorial/blob/master/random-forest.Rmd">useR-machine-learning-tutorial</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Feature_engineering">What is feature engineering?</a></li>
+</ul>
+<p>Learning</p>
+<ul>
+<li><a href="https://www.zhihu.com/question/50967184">看机器学习论文时，看不懂数学公式怎么办？</a></li>
+<li><a href="http://machinelearningmastery.com/techniques-to-understand-machine-learning-algorithms-without-the-background-in-mathematics/">5 Techniques To Understand Machine Learning Algorithms Without the Background in Mathematics</a></li>
+<li><a href="https://github.com/ZuzooVn/machine-learning-for-software-engineers">machine-learning-for-software-engineers</a></li>
+<li><a href="http://machinelearningmastery.com/what-if-im-not-good-at-mathematics/">What If I Am Not Good At Mathematics</a></li>
+</ul>
+<h2 id="courses">Courses</h2>
+<ul>
+<li><a href="https://developers.google.cn/machine-learning/crash-course/">机器学习速成课程 from Google</a></li>
+<li><a href="https://study.163.com/course/courseMain.htm?courseId=1004111045">深度学习入门系列 - 网易云课堂</a></li>
+<li><a href="https://discuss.gluon.ai/t/topic/753">《动手学深度学习》第一季课程汇总</a></li>
+</ul>
+<h2 id="random-forest">Random Forest</h2>
+<ul>
+<li><a href="http://www.analyticsvidhya.com/blog/2015/09/random-forest-algorithm-multiple-challenges/">Powerful Guide to learn Random Forest (with codes in R &amp; Python)</a>, <a href="https://www.analyticsvidhya.com/blog/2015/06/tuning-random-forest-model/">Tuning the parameters of your Random Forest model</a></li>
+<li><a href="https://github.com/kjw0612/awesome-random-forest">awesome-random-forest</a></li>
+<li><a href="https://www.analyticsvidhya.com/blog/2016/04/complete-tutorial-tree-based-modeling-scratch-in-python/">A Complete Tutorial on Tree Based Modeling from Scratch (in R &amp; Python)</a></li>
+</ul>
+<h2 id="gradient-boosting">gradient boosting</h2>
+<ul>
+<li><a href="https://github.com/catboost/catboost">CatBoost</a> - CatBoost is an open-source gradient boosting on decision trees library with categorical features support out of the box for Python, R https://catboost.yandex</li>
+<li><a href="https://github.com/Microsoft/LightGBM">LightGBM</a> - A fast, distributed, high performance gradient boosting (GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks. It is under the umbrella of the DMTK(http://github.com/microsoft/dmtk) project of Microsoft.</li>
+<li><a href="https://github.com/dmlc/xgboost">XGboost</a> - An optimized general purpose gradient boosting library. The library is parallelized, and also provides an optimized distributed version.</li>
+<li><a href="https://jessesw.com/XG-Boost/">A Guide to Gradient Boosted Trees with XGBoost in Python</a></li>
+<li><a href="https://towardsdatascience.com/catboost-vs-light-gbm-vs-xgboost-5f93620723db">CatBoost vs. Light GBM vs. XGBoost</a>, <a href="https://mp.weixin.qq.com/s/TD3RbdDidCrcL45oWpxNmw">入门 | 从结构到性能，一文概述XGBoost、Light GBM和CatBoost的同与不同</a></li>
+</ul>
+<h2 id="dimensionality-reduction">Dimensionality reduction</h2>
+<ul>
+<li><a href="https://www.analyticsvidhya.com/blog/2017/01/t-sne-implementation-r-python/">Comprehensive Guide on t-SNE algorithm with implementation in R &amp; Python</a></li>
+</ul>
+<h2 id="clustering">Clustering</h2>
+<ul>
+<li><a href="https://github.com/spotify/annoy">annoy</a> - Approximate Nearest Neighbors in C++/Python optimized for memory usage and loading/saving to disk</li>
+<li><a href="https://github.com/facebookresearch/pysparnn">pysparnn</a> - Approximate Nearest Neighbor Search for Sparse Data in Python!</li>
+</ul>
+<h2 id="benchmark">benchmark</h2>
+<ul>
+<li><a href="https://github.com/szilard/benchm-ml">benchm-ml</a> - A minimal benchmark for scalability, speed and accuracy of commonly used open source implementations (R packages, Python scikit-learn, H2O, xgboost, Spark MLlib etc.) of the top machine learning algorithms for binary classification (random forests, gradient boosted trees, deep neural networks etc.).</li>
+</ul>
+<h2 id="neural-network">Neural Network</h2>
+<ul>
+<li><a href="https://blog.skcript.com/how-to-learn-neural-networks-758b78f2736e">Learning How To Code Neural Networks</a></li>
+<li><a href="http://iamtrask.github.io/2015/07/12/basic-python-network/">A Neural Network in 11 lines of Python (Part 1)</a></li>
+<li>[人人都能用Python写出LSTM-RNN的代码！[你的神经网络学习最佳起步]]。 <a href="http://iamtrask.github.io/2015/11/15/anyone-can-code-lstm/">English</a></li>
+</ul>
+<h2 id="deep-learning">Deep Learning</h2>
+<ul>
+<li><a href="https://www.youtube.com/channel/UC9OeZkIwhzfv-_Cb7fCikLQ">DeepLearning.TV</a></li>
+<li><a href="http://xhrwang.me/2015/01/16/a-brief-overview-of-deep-learning.html">深度学习简明介绍</a></li>
+<li><a href="http://www.toptal.com/machine-learning/an-introduction-to-deep-learning-from-perceptrons-to-deep-networks">A Deep Learning Tutorial: From Perceptrons to Deep Networks</a> | 深度学习概述：从感知机到深度网络</li>
+<li><a href="http://ufldl.stanford.edu/tutorial/">UFLDL Tutorial</a></li>
+<li><a href="http://deeplearning.net/tutorial/">Deep Learning Tutorials</a></li>
+<li><a href="http://blog.sciencenet.cn/blog-315535-663215.html">机器学习前沿热点–Deep Learning</a></li>
+<li><a href="https://www.linkedin.com/pulse/7-steps-becoming-deep-learning-expert-ankit-agarwal">7 Steps for becoming Deep Learning Expert</a> <a href="https://gist.github.com/ronaldhan/4fedc9b7f3cf95cf64b8">翻译</a></li>
+<li><a href="http://lamda.nju.edu.cn/weixs/project/CNNTricks/CNNTricks.html">Must Know Tips/Tricks in Deep Neural Networks (by Xiu-Shen Wei)</a></li>
+</ul>
+<p>packages</p>
+<ul>
+<li><a href="https://github.com/zer0n/deepframeworks">Evaluation of Deep Learning Frameworks</a></li>
+<li><a href="https://medium.com/@abduljaleel/deep-machine-learning-libraries-and-frameworks-5fdf2bb6bfbe">Deep Machine Learning libraries and frameworks</a></li>
+<li><a href="http://www.teglor.com/b/deep-learning-libraries-language-cm569/">Deep Learning Libraries by Language</a></li>
+<li><a href="http://mxnet.rtfd.org/">mxnet</a> - Lightweight, Portable, Flexible Distributed Deep Learning with Dynamic, Mutation-aware Dataflow Dep Scheduler; for Python, R, Julia, Go, and more</li>
+<li><a href="http://blog.csdn.net/google19890102/article/details/48976021">利用Theano理解深度学习——Logistic Regression</a>，<a href="http://blog.csdn.net/google19890102/article/details/49071305">利用Theano理解深度学习——Multilayer Perceptron</a>，<a href="http://blog.csdn.net/google19890102/article/details/49966391">利用Theano理解深度学习——Convolutional Neural Networks</a></li>
+<li><a href="https://github.com/maxpumperla/hyperas">hyperas</a> - Keras + Hyperopt: A very simple wrapper for convenient hyperparameter optimization http://maxpumperla.github.io/hyperas/</li>
+</ul>
+<p>TensorFlow</p>
+<ul>
+<li><a href="https://miketech.it/tf_linear_regression/">TensorFlow入门：线性回归</a></li>
+</ul>
+<h2 id="optimization">Optimization</h2>
+<ul>
+<li><a href="https://github.com/HIPS/Spearmint">Spearmint</a> - Spearmint Bayesian optimization codebase</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ml_tutor/" class="btn btn-neutral float-right" title="ML_tutor">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../data_science2/" class="btn btn-neutral" title="Data_science"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../data_science2/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ml_tutor/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

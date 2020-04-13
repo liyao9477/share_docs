@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Mysql_chefs - liyao碎片机</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Mysql_chefs";
+    var mkdocs_page_input_path = "mysql_chefs.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> liyao碎片机</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Index</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r/">R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux/">Linux</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux_cmd/">Linux_cmd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cmd_line/">Cmd_line</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_python/">Awe_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_spider/">Awe_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data_science2/">Data_science</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../machine_learning/">ML</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ml_tutor/">ML_tutor</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Mysql_chefs</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#mysql-cookbook">MySQL Cookbook</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#scope">Scope</a></li>
+        
+            <li><a class="toctree-l3" href="#maintainers">Maintainers</a></li>
+        
+            <li><a class="toctree-l3" href="#requirements">Requirements</a></li>
+        
+            <li><a class="toctree-l3" href="#platform-support">Platform Support</a></li>
+        
+            <li><a class="toctree-l3" href="#cookbook-dependencies">Cookbook Dependencies</a></li>
+        
+            <li><a class="toctree-l3" href="#usage">Usage</a></li>
+        
+            <li><a class="toctree-l3" href="#connecting-with-the-mysql-cli-command">Connecting with the mysql CLI command</a></li>
+        
+            <li><a class="toctree-l3" href="#upgrading-from-older-version-of-the-mysql-cookbook">Upgrading from older version of the mysql cookbook</a></li>
+        
+            <li><a class="toctree-l3" href="#resources-overview">Resources Overview</a></li>
+        
+            <li><a class="toctree-l3" href="#advanced-usage-examples">Advanced Usage Examples</a></li>
+        
+            <li><a class="toctree-l3" href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+        
+            <li><a class="toctree-l3" href="#contributors">Contributors</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../21m_mysql/">Mysql_21m</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../math/">Math</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../statistic_python/">Statistic_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dm_da/">DM_DA</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sci/">Sci</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../utilities/">Uti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../web/">Web</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ajenti/">ajenti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../macos_app/">Macos_app</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r4ds/">r4ds</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python_spider/">Python_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../p_books/">P_books</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">liyao碎片机</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Mysql_chefs</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="mysql-cookbook">MySQL Cookbook</h1>
+<p><a href="https://supermarket.chef.io/cookbooks/mysql"><img alt="Cookbook Version" src="https://img.shields.io/cookbook/v/mysql.svg" /></a>
+<a href="https://circleci.com/gh/sous-chefs/mysql"><img alt="Build Status" src="https://img.shields.io/circleci/project/github/sous-chefs/mysql/master.svg" /></a>
+<a href="#backers"><img alt="OpenCollective" src="https://opencollective.com/sous-chefs/backers/badge.svg" /></a>
+<a href="#sponsors"><img alt="OpenCollective" src="https://opencollective.com/sous-chefs/sponsors/badge.svg" /></a>
+<a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-green.svg" /></a></p>
+<p>The MySQL Cookbook is a library cookbook that provides resource primitives (LWRPs) for use in recipes. It is designed to be a reference example for creating highly reusable cross-platform cookbooks.</p>
+<h2 id="scope">Scope</h2>
+<p>This cookbook is concerned with the "MySQL Community Server", particularly those shipped with F/OSS Unix and Linux distributions. It does not address forks or value-added repackaged MySQL distributions like MariaDB or Percona.</p>
+<h2 id="maintainers">Maintainers</h2>
+<p>This cookbook is maintained by the Sous Chefs. The Sous Chefs are a community of Chef cookbook maintainers working together to maintain important cookbooks. If you’d like to know more please visit <a href="https://sous-chefs.org/">sous-chefs.org</a> or come chat with us on the Chef Community Slack in <a href="https://chefcommunity.slack.com/messages/C2V7B88SF">#sous-chefs</a>.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Chef 12.7 or higher</li>
+<li>Network accessible package repositories</li>
+<li>'recipe[selinux::disabled]' on RHEL platforms</li>
+</ul>
+<h2 id="platform-support">Platform Support</h2>
+<p>The following platforms have been tested with Test Kitchen:</p>
+<table>
+<thead>
+<tr>
+<th>OS</th>
+<th>5.1</th>
+<th>5.5</th>
+<th>5.6</th>
+<th>5.7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>debian-8</td>
+<td></td>
+<td>X</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>ubuntu-14.04</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td></td>
+</tr>
+<tr>
+<td>ubuntu-16.04</td>
+<td></td>
+<td></td>
+<td></td>
+<td>X</td>
+</tr>
+<tr>
+<td>centos-6</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>centos-7</td>
+<td></td>
+<td>X</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>fedora</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr>
+<td>openSUSE Leap</td>
+<td></td>
+<td></td>
+<td>X</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="cookbook-dependencies">Cookbook Dependencies</h2>
+<p>There are no hard coupled dependencies. However, there is a loose dependency on <code>yum-mysql-community</code> for RHEL/CentOS platforms. As of the 8.0 version of this cookbook, configuration of the package repos is now the responsibility of the user.</p>
+<h2 id="usage">Usage</h2>
+<p>Place a dependency on the mysql cookbook in your cookbook's metadata.rb</p>
+<pre><code class="ruby">depends 'mysql', '~&gt; 8.0'
+</code></pre>
+
+<p>Then, in a recipe:</p>
+<pre><code class="ruby">mysql_service 'foo' do
+  port '3306'
+  version '5.5'
+  initial_root_password 'change me'
+  action [:create, :start]
+end
+</code></pre>
+
+<p>The service name on the OS is <code>mysql-foo</code>. You can manually start and stop it with <code>service mysql-foo start</code> and <code>service mysql-foo stop</code>.</p>
+<p>If you use <code>default</code> as the name the service name will be <code>mysql</code> instead of <code>mysql-default</code>.</p>
+<p>The configuration file is at <code>/etc/mysql-foo/my.cnf</code>. It contains the minimum options to get the service running. It looks like this.</p>
+<pre><code class="toml"># Chef generated my.cnf for instance mysql-foo
+
+[client]
+default-character-set          = utf8
+port                           = 3306
+socket                         = /var/run/mysql-foo/mysqld.sock
+
+[mysql]
+default-character-set          = utf8
+
+[mysqld]
+user                           = mysql
+pid-file                       = /var/run/mysql-foo/mysqld.pid
+socket                         = /var/run/mysql-foo/mysqld.sock
+port                           = 3306
+datadir                        = /var/lib/mysql-foo
+tmpdir                         = /tmp
+log-error                      = /var/log/mysql-foo/error.log
+!includedir /etc/mysql-foo/conf.d
+
+[mysqld_safe]
+socket                         = /var/run/mysql-foo/mysqld.sock
+</code></pre>
+
+<p>You can put extra configuration into the conf.d directory by using the <code>mysql_config</code> resource, like this:</p>
+<pre><code class="ruby">mysql_service 'foo' do
+  port '3306'
+  version '5.5'
+  initial_root_password 'change me'
+  action [:create, :start]
+end
+
+mysql_config 'foo' do
+  source 'my_extra_settings.erb'
+  instance 'foo'
+  notifies :restart, 'mysql_service[foo]'
+  action :create
+end
+</code></pre>
+
+<p>You are responsible for providing <code>my_extra_settings.erb</code> in your own cookbook's templates folder. The name of the mysql service instance must be provided in mysql config as this defaults to 'default'.</p>
+<h2 id="connecting-with-the-mysql-cli-command">Connecting with the mysql CLI command</h2>
+<p>Logging into the machine and typing <code>mysql</code> with no extra arguments will fail. You need to explicitly connect over the socket with <code>mysql -S /var/run/mysql-foo/mysqld.sock</code>, or over the network with <code>mysql -h 127.0.0.1</code></p>
+<h2 id="upgrading-from-older-version-of-the-mysql-cookbook">Upgrading from older version of the mysql cookbook</h2>
+<ul>
+<li>It is strongly recommended that you rebuild the machine from scratch. This is easy if you have your <code>data_dir</code> on a dedicated mount point. If you <em>must</em> upgrade in-place, follow the instructions below.</li>
+<li>The 6.x series supports multiple service instances on a single machine. It dynamically names the support directories and service names. <code>/etc/mysql becomes /etc/mysql-instance_name</code>. Other support directories in <code>/var</code> <code>/run</code> etc work the same way. Make sure to specify the <code>data_dir</code> property on the <code>mysql_service</code> resource to point to the old <code>/var/lib/mysql</code> directory.</li>
+</ul>
+<h2 id="resources-overview">Resources Overview</h2>
+<h3 id="mysql_service">mysql_service</h3>
+<p>The <code>mysql_service</code> resource manages the basic plumbing needed to get a MySQL server instance running with minimal configuration.</p>
+<p>The <code>:create</code> action handles package installation, support directories, socket files, and other operating system level concerns. The internal configuration file contains just enough to get the service up and running, then loads extra configuration from a conf.d directory. Further configurations are managed with the <code>mysql_config</code> resource.</p>
+<ul>
+<li>If the <code>data_dir</code> is empty, a database will be initialized, and a</li>
+<li>root user will be set up with <code>initial_root_password</code>. If this</li>
+<li>directory already contains database files, no action will be taken.</li>
+</ul>
+<p>The <code>:start</code> action starts the service on the machine using the appropriate provider for the platform. The <code>:start</code> action should be omitted when used in recipes designed to build containers.</p>
+<h4 id="example">Example</h4>
+<pre><code class="ruby">mysql_service 'default' do
+  version '5.7'
+  bind_address '0.0.0.0'
+  port '3306'
+  data_dir '/data'
+  initial_root_password 'Ch4ng3me'
+  action [:create, :start]
+end
+</code></pre>
+
+<p>Please note that when using <code>notifies</code> or <code>subscribes</code>, the resource to reference is <code>mysql_service[name]</code>, not <code>service[mysql]</code>.</p>
+<h4 id="parameters">Parameters</h4>
+<ul>
+<li><code>charset</code> - specifies the default character set. Defaults to <code>utf8</code>.</li>
+<li><code>data_dir</code> - determines where the actual data files are kept on the machine. This is useful when mounting external storage. When omitted, it will default to the platform's native location.</li>
+<li><code>error_log</code> - Tunable location of the error_log</li>
+<li><code>initial_root_password</code> - allows the user to specify the initial root password for mysql when initializing new databases. This can be set explicitly in a recipe, driven from a node attribute, or from data_bags. When omitted, it defaults to <code>ilikerandompasswords</code>. Please be sure to change it.</li>
+<li><code>instance</code> - A string to identify the MySQL service. By convention, to allow for multiple instances of the <code>mysql_service</code>, directories and files on disk are named <code>mysql-&lt;instance_name&gt;</code>. Defaults to the resource name.</li>
+<li><code>package_name</code> - Defaults to a value looked up in an internal map.</li>
+<li><code>package_version</code> - Specific version of the package to install,passed onto the underlying package manager. Defaults to <code>nil</code>.</li>
+<li><code>bind_address</code> - determines the listen IP address for the mysqld service. When omitted, it will be determined by MySQL. If the address is "regular" IPv4/IPv6address (e.g 127.0.0.1 or ::1), the server accepts TCP/IP connections only for that particular address. If the address is "0.0.0.0" (IPv4) or "::" (IPv6), the server accepts TCP/IP connections on all IPv4 or IPv6 interfaces.</li>
+<li><code>mysqld_options</code> - A key value hash of options to be rendered into the main my.cnf. WARNING - It is highly recommended that you use the <code>mysql_config</code> resource instead of sending extra config into a <code>mysql_service</code> resource. This will allow you to set up notifications and subscriptions between the service and its configuration. That being said, this can be useful for adding extra options needed for database initialization at first run.</li>
+<li><code>port</code> - determines the listen port for the mysqld service. When omitted, it will default to '3306'.</li>
+<li><code>run_group</code> - The name of the system group the <code>mysql_service</code> should run as. Defaults to 'mysql'.</li>
+<li><code>run_user</code> - The name of the system user the <code>mysql_service</code> should run as. Defaults to 'mysql'.</li>
+<li><code>pid_file</code> - Tunable location of the pid file.</li>
+<li><code>socket</code> - determines where to write the socket file for the <code>mysql_service</code> instance. Useful when configuring clients on the same machine to talk over socket and skip the networking stack. Defaults to a calculated value based on platform and instance name.</li>
+<li><code>tmp_dir</code> - Tunable location of the tmp_dir.</li>
+<li><code>version</code> - allows the user to select from the versions available for the platform, where applicable. When omitted, it will install the default MySQL version for the target platform. Available version numbers are <code>5.0</code>, <code>5.1</code>, <code>5.5</code>, <code>5.6</code>, and <code>5.7</code>, depending on platform.</li>
+</ul>
+<h4 id="actions">Actions</h4>
+<ul>
+<li><code>:create</code> - Configures everything but the underlying operating system service.</li>
+<li><code>:delete</code> - Removes everything but the package and data_dir.</li>
+<li><code>:start</code> - Starts the underlying operating system service.</li>
+<li><code>:stop</code>- Stops the underlying operating system service.</li>
+<li><code>:restart</code> - Restarts the underlying operating system service.</li>
+<li><code>:reload</code> - Reloads the underlying operating system service.</li>
+</ul>
+<h4 id="providers">Providers</h4>
+<p>Chef selects the appropriate provider based on platform and version, but you can specify one if your platform support it.</p>
+<pre><code class="ruby">mysql_service[instance-1] do
+  port '1234'
+  data_dir '/mnt/lottadisk'
+  provider Chef::Provider::MysqlServiceSysvinit
+  action [:create, :start]
+end
+</code></pre>
+
+<ul>
+<li><code>Chef::Provider::MysqlServiceBase</code> - Configures everything needed to run a MySQL service except the platform service facility. This provider should never be used directly. The <code>:start</code>, <code>:stop</code>, <code>:restart</code>, and <code>:reload</code> actions are stubs meant to be overridden by the providers below.</li>
+<li><code>Chef::Provider::MysqlServiceSmf</code> - Starts a <code>mysql_service</code> using the Service Management Facility, used by Solaris and Illumos. Manages the FMRI and method script.</li>
+<li><code>Chef::Provider::MysqlServiceSystemd</code> - Starts a <code>mysql_service</code> using SystemD. Manages the unit file and activation state</li>
+<li><code>Chef::Provider::MysqlServiceSysvinit</code> - Starts a <code>mysql_service</code> using SysVinit. Manages the init script and status.</li>
+<li><code>Chef::Provider::MysqlServiceUpstart</code> - Starts a <code>mysql_service</code> using Upstart. Manages job definitions and status.</li>
+</ul>
+<h3 id="mysql_config">mysql_config</h3>
+<p>The <code>mysql_config</code> resource is a wrapper around the core Chef <code>template</code> resource. Instead of a <code>path</code> parameter, it uses the <code>instance</code> parameter to calculate the path on the filesystem where file is rendered.</p>
+<h4 id="example_1">Example</h4>
+<pre><code class="ruby">mysql_config[default] do
+  source 'site.cnf.erb'
+  action :create
+end
+</code></pre>
+
+<h4 id="parameters_1">Parameters</h4>
+<ul>
+<li><code>config_name</code> - The base name of the configuration file to be rendered into the conf.d directory on disk. Defaults to the resource name.</li>
+<li><code>cookbook</code> - The name of the cookbook to look for the template source. Defaults to nil</li>
+<li><code>group</code> - System group for file ownership. Defaults to 'mysql'.</li>
+<li><code>instance</code> - Name of the <code>mysql_service</code> instance the config is meant for. Defaults to 'default'.</li>
+<li><code>owner</code> - System user for file ownership. Defaults to 'mysql'.</li>
+<li><code>source</code> - Template in cookbook to be rendered.</li>
+<li><code>variables</code> - Variables to be passed to the underlying <code>template</code> resource.</li>
+<li><code>version</code> - Version of the <code>mysql_service</code> instance the config is meant for. Used to calculate path. Only necessary when using packages with unique configuration paths, such as RHEL Software Collections or OmniOS. Defaults to 'nil'</li>
+</ul>
+<h4 id="actions_1">Actions</h4>
+<ul>
+<li><code>:create</code> - Renders the template to disk at a path calculated using the instance parameter.</li>
+<li><code>:delete</code> - Deletes the file from the conf.d directory calculated using the instance parameter.</li>
+</ul>
+<h4 id="more-examples">More Examples</h4>
+<pre><code class="ruby">mysql_service 'instance-1' do
+  action [:create, :start]
+end
+
+mysql_service 'instance-2' do
+  action [:create, :start]
+end
+
+mysql_config 'logging' do
+  instance 'instance-1'
+  source 'logging.cnf.erb'
+  action :create
+  notifies :restart, 'mysql_service[instance-1]'
+end
+
+mysql_config 'security settings for instance-2' do
+  config_name 'security'
+  instance 'instance-2'
+  source 'security_stuff.cnf.erb'
+  variables(:foo =&gt; 'bar')
+  action :create
+  notifies :restart, 'mysql_service[instance-2]'
+end
+</code></pre>
+
+<h3 id="mysql_client">mysql_client</h3>
+<p>The <code>mysql_client</code> resource manages the MySQL client binaries and development libraries.</p>
+<p>It is an example of a "singleton" resource. Declaring two <code>mysql_client</code> resources on a machine usually won't yield two separate copies of the client binaries, except for platforms that support multiple versions (RHEL SCL, OmniOS).</p>
+<h4 id="example_2">Example</h4>
+<pre><code class="ruby">mysql_client 'default' do
+  action :create
+end
+</code></pre>
+
+<h4 id="properties">Properties</h4>
+<ul>
+<li><code>package_name</code> - An array of packages to be installed. Defaults to a value looked up in an internal map.</li>
+<li><code>package_version</code> - Specific versions of the package to install, passed onto the underlying package manager. Defaults to <code>nil</code>.</li>
+<li><code>version</code> - Major MySQL version number of client packages. Only valid on for platforms that support multiple versions, such as RHEL via Software Collections and OmniOS.</li>
+</ul>
+<h4 id="actions_2">Actions</h4>
+<ul>
+<li><code>:create</code> - Installs the client software</li>
+<li><code>:delete</code> - Removes the client software</li>
+</ul>
+<h2 id="advanced-usage-examples">Advanced Usage Examples</h2>
+<p>There are a number of configuration scenarios supported by the use of resource primitives in recipes. For example, you might want to run multiple MySQL services, as different users, and mount block devices that contain pre-existing databases.</p>
+<h3 id="multiple-instances-as-different-users">Multiple Instances as Different Users</h3>
+<pre><code class="ruby"># instance-1
+user 'alice' do
+  action :create
+end
+
+directory '/mnt/data/mysql/instance-1' do
+  owner 'alice'
+  action :create
+end
+
+mount '/mnt/data/mysql/instance-1' do
+  device '/dev/sdb1'
+  fstype 'ext4'
+  action [:mount, :enable]
+end
+
+mysql_service 'instance-1' do
+  port '3307'
+  run_user 'alice'
+  data_dir '/mnt/data/mysql/instance-1'
+  action [:create, :start]
+end
+
+mysql_config 'site config for instance-1' do
+  instance 'instance-1'
+  source 'instance-1.cnf.erb'
+  notifies :restart, 'mysql_service[instance-1]'
+end
+
+# instance-2
+user 'bob' do
+  action :create
+end
+
+directory '/mnt/data/mysql/instance-2' do
+  owner 'bob'
+  action :create
+end
+
+mount '/mnt/data/mysql/instance-2' do
+  device '/dev/sdc1'
+  fstype 'ext3'
+  action [:mount, :enable]
+end
+
+mysql_service 'instance-2' do
+  port '3308'
+  run_user 'bob'
+  data_dir '/mnt/data/mysql/instance-2'
+  action [:create, :start]
+end
+
+mysql_config 'site config for instance-2' do
+  instance 'instance-2'
+  source 'instance-2.cnf.erb'
+  notifies :restart, 'mysql_service[instance-2]'
+end
+</code></pre>
+
+<h3 id="replication-testing">Replication Testing</h3>
+<p>Use multiple <code>mysql_service</code> instances to test a replication setup. This particular example serves as a smoke test in Test Kitchen because it exercises different resources and requires service restarts.</p>
+<p><a href="https://github.com/chef-cookbooks/mysql/blob/master/test/fixtures/cookbooks/mysql_replication_test/recipes/default.rb">https://github.com/chef-cookbooks/mysql/blob/master/test/fixtures/cookbooks/mysql_replication_test/recipes/default.rb</a></p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="how-do-i-run-this-behind-my-firewall">How do I run this behind my firewall</h3>
+<p>On Linux, the <code>mysql_service</code> resource uses the platform's underlying package manager to install software. For this to work behind firewalls, you'll need to either:</p>
+<ul>
+<li>Configure the system yum/apt utilities to use a proxy server that</li>
+<li>can reach the Internet</li>
+<li>Host a package repository on a network that the machine can talk to</li>
+</ul>
+<p>On the RHEL platform_family, applying the <code>yum::default</code> recipe will allow you to drive the <code>yum_globalconfig</code> resource with attributes to change the global yum proxy settings.</p>
+<p>If hosting repository mirrors, applying one of the following recipes and adjust the settings with node attributes.</p>
+<ul>
+<li><code>recipe[yum-centos::default]</code> from the Supermarket</li>
+</ul>
+<p><a href="https://supermarket.chef.io/cookbooks/yum-centos">https://supermarket.chef.io/cookbooks/yum-centos</a></p>
+<p><a href="https://github.com/chef-cookbooks/yum-centos">https://github.com/chef-cookbooks/yum-centos</a></p>
+<ul>
+<li><code>recipe[yum-mysql-community::default]</code> from the Supermarket</li>
+</ul>
+<p><a href="https://supermarket.chef.io/cookbooks/yum-mysql-community">https://supermarket.chef.io/cookbooks/yum-mysql-community</a></p>
+<p><a href="https://github.com/chef-cookbooks/yum-mysql-community">https://github.com/chef-cookbooks/yum-mysql-community</a></p>
+<h3 id="the-mysql-command-line-doesnt-work">The mysql command line doesn't work</h3>
+<p>If you log into the machine and type <code>mysql</code>, you may see an error like this one:</p>
+<p><code>Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock'</code></p>
+<p>This is because MySQL is hardcoded to read the defined default my.cnf file, typically at /etc/my.cnf, and this LWRP deletes it to prevent overlap among multiple MySQL configurations.</p>
+<p>To connect to the socket from the command line, check the socket in the relevant my.cnf file and use something like this:</p>
+<p><code>mysql -S /var/run/mysql-foo/mysqld.sock -Pwhatever</code></p>
+<p>Or to connect over the network, use something like this: connect over the network..</p>
+<p><code>mysql -h 127.0.0.1 -Pwhatever</code></p>
+<p>These network or socket ssettings can also be put in you $HOME/.my.cnf, if preferred.</p>
+<h3 id="what-about-mariadb-percona-etc">What about MariaDB, Percona, etc</h3>
+<p>MySQL forks are purposefully out of scope for this cookbook. This is mostly to reduce the testing matrix to a manageable size. Cookbooks for these technologies can easily be created by copying and adapting this cookbook. However, there will be differences.</p>
+<p>Package repository locations, package version names, software major version numbers, supported platform matrices, and the availability of software such as XtraDB and Galera are the main reasons that creating multiple cookbooks to make sense.</p>
+<p>There are existing cookbooks to carter for these forks, check them out on the supermarket</p>
+<h2 id="contributors">Contributors</h2>
+<p>This project exists thanks to all the people who <a href="https://opencollective.com/sous-chefs/contributors.svg?width=890&amp;button=false">contribute.</a></p>
+<h3 id="backers">Backers</h3>
+<p>Thank you to all our backers!</p>
+<p><img alt="https://opencollective.com/sous-chefs#backers" src="https://opencollective.com/sous-chefs/backers.svg?width=600&amp;avatarHeight=40" /></p>
+<h3 id="sponsors">Sponsors</h3>
+<p>Support this project by becoming a sponsor. Your logo will show up here with a link to your website.</p>
+<p><img alt="https://opencollective.com/sous-chefs/sponsor/0/website" src="https://opencollective.com/sous-chefs/sponsor/0/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/1/website" src="https://opencollective.com/sous-chefs/sponsor/1/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/2/website" src="https://opencollective.com/sous-chefs/sponsor/2/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/3/website" src="https://opencollective.com/sous-chefs/sponsor/3/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/4/website" src="https://opencollective.com/sous-chefs/sponsor/4/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/5/website" src="https://opencollective.com/sous-chefs/sponsor/5/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/6/website" src="https://opencollective.com/sous-chefs/sponsor/6/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/7/website" src="https://opencollective.com/sous-chefs/sponsor/7/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/8/website" src="https://opencollective.com/sous-chefs/sponsor/8/avatar.svg?avatarHeight=100" />
+<img alt="https://opencollective.com/sous-chefs/sponsor/9/website" src="https://opencollective.com/sous-chefs/sponsor/9/avatar.svg?avatarHeight=100" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../21m_mysql/" class="btn btn-neutral float-right" title="Mysql_21m">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ml_tutor/" class="btn btn-neutral" title="ML_tutor"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ml_tutor/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../21m_mysql/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

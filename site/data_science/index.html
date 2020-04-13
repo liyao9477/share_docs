@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Awesome Data Science with Python - liyao碎片机</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Awesome Data Science with Python";
+    var mkdocs_page_input_path = "data_science.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> liyao碎片机</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Index</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r/">R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux/">Linux</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux_cmd/">Linux_cmd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cmd_line/">Cmd_line</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_python/">Awe_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_spider/">Awe_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data_science2/">Data_science</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../machine_learning/">ML</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ml_tutor/">ML_tutor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysql_chefs/">Mysql_chefs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../21m_mysql/">Mysql_21m</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../math/">Math</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../statistic_python/">Statistic_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../dm_da/">DM_DA</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sci/">Sci</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../utilities/">Uti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../web/">Web</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ajenti/">ajenti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../macos_app/">Macos_app</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r4ds/">r4ds</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python_spider/">Python_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../p_books/">P_books</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">liyao碎片机</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Awesome Data Science with Python</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="awesome-data-science-with-python">Awesome Data Science with Python</h1>
+<blockquote>
+<p>A curated list of awesome resources for practicing data science using Python, including not only libraries, but also links to tutorials, code snippets, blog posts and talks.  </p>
+</blockquote>
+<h4 id="core">Core</h4>
+<p><a href="https://pandas.pydata.org/">pandas</a> - Data structures built on top of <a href="https://www.numpy.org/">numpy</a>.<br />
+<a href="https://scikit-learn.org/stable/">scikit-learn</a> - Core ML library.<br />
+<a href="https://matplotlib.org/">matplotlib</a> - Plotting library.<br />
+<a href="https://seaborn.pydata.org/">seaborn</a> - Data visualization library based on matplotlib.<br />
+<a href="https://github.com/mouradmourafiq/pandas-summary">pandas_summary</a> - Basic statistics using <code>DataFrameSummary(df).summary()</code>.<br />
+<a href="https://github.com/pandas-profiling/pandas-profiling">pandas_profiling</a> - Descriptive statistics using <code>ProfileReport</code>.<br />
+<a href="https://github.com/scikit-learn-contrib/sklearn-pandas">sklearn_pandas</a> - Helpful <code>DataFrameMapper</code> class.<br />
+<a href="https://github.com/ResidentMario/missingno">missingno</a> - Missing data visualization.<br />
+<a href="https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv">rainbow-csv</a> - Plugin to display .csv files with nice colors.  </p>
+<h4 id="environment-and-jupyter">Environment and Jupyter</h4>
+<p><a href="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/">General Jupyter Tricks</a><br />
+Fixing environment: <a href="https://jakevdp.github.io/blog/2017/12/05/installing-python-packages-from-jupyter/">link</a><br />
+Python debugger (pdb) - <a href="https://www.blog.pythonlibrary.org/2018/10/17/jupyter-notebook-debugging/">blog post</a>, <a href="https://www.youtube.com/watch?v=Z0ssNAbe81M&amp;t=1h44m15s">video</a>, <a href="https://nblock.org/2011/11/15/pdb-cheatsheet/">cheatsheet</a><br />
+<a href="https://github.com/drivendata/cookiecutter-data-science">cookiecutter-data-science</a> - Project template for data science projects.<br />
+<a href="https://nteract.io/">nteract</a> - Open Jupyter Notebooks with doubleclick.<br />
+<a href="https://github.com/nteract/papermill">papermill</a> - Parameterize and execute Jupyter notebooks, <a href="https://pbpython.com/papermil-rclone-report-1.html">tutorial</a>.<br />
+<a href="https://github.com/jupyter/nbdime">nbdime</a> - Diff two notebook files, Alternative GitHub App: <a href="https://www.reviewnb.com/">ReviewNB</a>.<br />
+<a href="https://github.com/damianavila/RISE">RISE</a> - Turn Jupyter notebooks into presentations.<br />
+<a href="https://github.com/quantopian/qgrid">qgrid</a> - Pandas <code>DataFrame</code> sorting.<br />
+<a href="https://github.com/nicolaskruchten/jupyter_pivottablejs">pivottablejs</a> - Drag n drop Pivot Tables and Charts for jupyter notebooks.<br />
+<a href="https://github.com/mwouts/itables">itables</a> - Interactive tables in Jupyter.<br />
+<a href="https://github.com/CermakM/jupyter-datatables">jupyter-datatables</a> - Interactive tables in Jupyter.<br />
+<a href="https://blog.jupyter.org/a-visual-debugger-for-jupyter-914e61716559">debugger</a> - Visual debugger for Jupyter.  </p>
+<h4 id="pandas-tricks-alternatives-and-additions">Pandas Tricks, Alternatives and Additions</h4>
+<p><a href="https://towardsdatascience.com/5-lesser-known-pandas-tricks-e8ab1dd21431">Pandas Tricks</a><br />
+<a href="https://www.youtube.com/watch?v=yXGCKqo5cEY">Using df.pipe() (video)</a><br />
+<a href="https://github.com/firmai/pandasvault">pandasvault</a> - Large collection of pandas tricks.  </p>
+<p><a href="https://github.com/modin-project/modin">modin</a> - Parallelization library for faster pandas <code>DataFrame</code>.<br />
+<a href="https://github.com/vaexio/vaex">vaex</a> - Out-of-Core DataFrames.<br />
+<a href="https://github.com/nalepae/pandarallel">pandarallel</a> - Parallelize pandas operations.<br />
+<a href="https://github.com/pydata/xarray/">xarray</a> - Extends pandas to n-dimensional arrays.<br />
+<a href="https://github.com/jmcarpenter2/swifter">swifter</a> - Apply any function to a pandas dataframe faster. <br />
+<a href="https://github.com/Zsailer/pandas_flavor">pandas_flavor</a> - Write custom accessors like <code>.str</code> and <code>.dt</code>. <br />
+<a href="https://github.com/eyaltrabelsi/pandas-log">pandas-log</a> - Find business logic issues and performance issues in pandas.<br />
+<a href="https://github.com/firmai/pandapy">pandapy</a> - Additional features for pandas.  </p>
+<h4 id="helpful">Helpful</h4>
+<p><a href="https://github.com/tqdm/tqdm">tqdm</a> - Progress bars for for-loops.<br />
+<a href="https://github.com/gruns/icecream">icecream</a> - Simple debugging output.<br />
+<a href="https://github.com/Delgan/loguru">loguru</a> - Python logging.<br />
+<a href="https://github.com/chendaniely/pyprojroot">pyprojroot</a> - Helpful <code>here()</code> command from R.<br />
+<a href="https://github.com/intake/intake">intake</a> - Loading datasets made easier, <a href="https://www.youtube.com/watch?v=s7Ww5-vD2Os&amp;t=33m40s">talk</a>. </p>
+<h4 id="extraction">Extraction</h4>
+<p><a href="https://github.com/deanmalmgren/textract">textract</a> - Extract text from any document.<br />
+<a href="https://github.com/socialcopsdev/camelot">camelot</a> - Extract text from PDF.  </p>
+<h4 id="big-data">Big Data</h4>
+<p><a href="https://docs.databricks.com/spark/latest/dataframes-datasets/introduction-to-dataframes-python.html#work-with-dataframes">spark</a> - <code>DataFrame</code> for big data, <a href="https://gist.github.com/crawles/b47e23da8218af0b9bd9d47f5242d189">cheatsheet</a>, <a href="https://github.com/ericxiao251/spark-syntax">tutorial</a>.<br />
+<a href="https://github.com/lensacom/sparkit-learn">sparkit-learn</a>, <a href="https://github.com/databricks/spark-deep-learning">spark-deep-learning</a> - ML frameworks for spark.<br />
+<a href="https://github.com/databricks/koalas">koalas</a> - Pandas API on Apache Spark.<br />
+<a href="https://github.com/dask/dask">dask</a>, <a href="http://ml.dask.org/">dask-ml</a> - Pandas <code>DataFrame</code> for big data and machine learning library, <a href="https://matthewrocklin.com/blog//work/2018/07/17/dask-dev">resources</a>, <a href="https://www.youtube.com/watch?v=ccfsbuqsjgI">talk1</a>, <a href="https://www.youtube.com/watch?v=RA_2qdipVng">talk2</a>, <a href="https://github.com/dask/dask-ec2/tree/master/notebooks">notebooks</a>, <a href="https://www.youtube.com/user/mdrocklin">videos</a>.<br />
+<a href="https://github.com/jcrist/dask-gateway">dask-gateway</a> - Managing dask clusters.<br />
+<a href="https://github.com/apple/turicreate">turicreate</a> - Helpful <code>SFrame</code> class for out-of-memory dataframes.<br />
+<a href="https://github.com/h2oai/h2o-3">h2o</a> - Helpful <code>H2OFrame</code> class for out-of-memory dataframes.<br />
+<a href="https://github.com/h2oai/datatable">datatable</a> - Data Table for big data support.<br />
+<a href="https://github.com/rapidsai/cudf">cuDF</a> - GPU DataFrame Library.<br />
+<a href="https://github.com/ray-project/ray/">ray</a> - Flexible, high-performance distributed execution framework.<br />
+<a href="https://github.com/mars-project/mars">mars</a> - Tensor-based unified framework for large-scale data computation.<br />
+<a href="https://github.com/kwgoodman/bottleneck">bottleneck</a> - Fast NumPy array functions written in C. <br />
+<a href="https://github.com/Blosc/bcolz">bolz</a> - A columnar data container that can be compressed.<br />
+<a href="https://github.com/cupy/cupy">cupy</a> - NumPy-like API accelerated with CUDA.<br />
+<a href="https://github.com/uber/petastorm">petastorm</a> - Data access library for parquet files by Uber.<br />
+<a href="https://github.com/lasersonlab/zappy">zappy</a> - Distributed numpy arrays.  </p>
+<h5 id="command-line-tools-csv">Command line tools, CSV</h5>
+<p><a href="https://github.com/spencertipping/ni">ni</a> - Command line tool for big data.<br />
+<a href="https://github.com/BurntSushi/xsv">xsv</a> - Command line tool for indexing, slicing, analyzing, splitting and joining CSV files.<br />
+<a href="https://csvkit.readthedocs.io/en/1.0.3/">csvkit</a> - Another command line tool for CSV files.<br />
+<a href="https://pypi.org/project/csvsort/">csvsort</a> - Sort large csv files.<br />
+<a href="https://github.com/eBay/tsv-utils">tsv-utils</a> - Tools for working with CSV files by ebay.<br />
+<a href="https://github.com/cheat/cheat">cheat</a> - Make cheatsheets for command line commands.  </p>
+<h4 id="classical-statistics">Classical Statistics</h4>
+<h5 id="texts">Texts</h5>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4877414/">Greenland - Statistical tests, P values, confidence intervals, and power: a guide to misinterpretations</a><br />
+<a href="https://lindeloev.github.io/tests-as-linear/">Lindeløv - Common statistical tests are linear models</a>  <br />
+<a href="https://lambdaclass.com/data_etudes/central_limit_theorem_misuse/">Chatruc - The Central Limit Theorem and its misuse</a><br />
+<a href="http://www.stat.tugraz.at/AJS/ausg093/093Al-Saleh.pdf">Al-Saleh - Properties of the Standard Deviation that are Rarely Mentioned in Classrooms</a> <br />
+<a href="http://www-stat.wharton.upenn.edu/~hwainer/Readings/Most%20Dangerous%20eqn.pdf">Wainer - The Most Dangerous Equation</a> <br />
+<a href="https://www.nowpublishers.com/article/Details/RBE-0092">Gigerenzer - The Bias Bias in Behavioral Economics</a><br />
+<a href="https://www.johndcook.com/blog/2010/03/30/statistical-rule-of-three/">Cook - Estimating the chances of something that hasn’t happened yet</a>  </p>
+<h4 id="statistical-tests-and-packages">Statistical Tests and Packages</h4>
+<p><a href="https://github.com/researchpy/researchpy">researchpy</a> - Helpful <code>summary_cont()</code> function for summary statistics (Table 1).<br />
+<a href="https://github.com/maximtrp/scikit-posthocs">scikit-posthocs</a> - Statistical post-hoc tests for pairwise multiple comparisons.<br />
+<a href="http://www.statsmodels.org/dev/generated/statsmodels.graphics.agreement.mean_diff_plot.html">Bland-Altman Plot</a> - Plot for agreement between two methods of measurement.
+<a href="https://docs.scipy.org/doc/scipy/reference/stats.html#statistical-tests">scipy.stats</a> - Statistical tests.
+<a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.f_oneway.html">ANOVA</a>, Tutorials: <a href="https://pythonfordatascience.org/anova-python/">One-way</a>, <a href="https://pythonfordatascience.org/anova-2-way-n-way/">Two-way</a>, <a href="https://mcfromnz.wordpress.com/2011/03/02/anova-type-iiiiii-ss-explained/">Type 1,2,3 explained</a>.  </p>
+<h5 id="visualizations">Visualizations</h5>
+<p><a href="https://rpsychologist.com/d3/NHST/">Null Hypothesis Significance Testing (NHST) and Sample Size Calculation</a><br />
+<a href="https://rpsychologist.com/d3/correlation/">Correlation</a><br />
+<a href="https://rpsychologist.com/d3/cohend/">Cohen's d</a><br />
+<a href="https://rpsychologist.com/d3/CI/">Confidence Interval</a><br />
+<a href="https://rpsychologist.com/d3/equivalence/">Equivalence, non-inferiority and superiority testing</a><br />
+<a href="https://rpsychologist.com/d3/bayes/">Bayesian two-sample t test</a><br />
+<a href="https://rpsychologist.com/d3/pdist/">Distribution of p-values when comparing two groups</a><br />
+<a href="https://rpsychologist.com/d3/tdist/">Understanding the t-distribution and its normal approximation</a>     </p>
+<h4 id="talks">Talks</h4>
+<p><a href="https://www.youtube.com/watch?v=SUq0shKLPPs">Inverse Propensity Weighting</a><br />
+<a href="https://www.youtube.com/watch?reload=9&amp;v=3ZWCKr0vDtc">Dealing with Selection Bias By Propensity Based Feature Selection</a>  </p>
+<h4 id="frameworks">Frameworks</h4>
+<p><a href="https://github.com/scikit-learn/scikit-learn">scikit-learn</a> - General machine learning framework.<br />
+<a href="https://github.com/h2oai/h2o-3">h2o</a> - Machine learning framework.<br />
+<a href="https://github.com/BVLC/caffe">caffe</a> - Deep learning framework, <a href="https://github.com/BVLC/caffe/wiki/Model-Zoo">pretrained models</a>.<br />
+<a href="https://github.com/apache/incubator-mxnet">mxnet</a> - Deep learning framework, <a href="https://d2l.ai/index.html">book</a>.  </p>
+<h4 id="exploration-and-cleaning">Exploration and Cleaning</h4>
+<p><a href="https://github.com/r0f1/ml_checklist">Checklist</a>.<br />
+<a href="https://pyjanitor.readthedocs.io/">janitor</a> - Clean messy column names.<br />
+<a href="https://github.com/eltonlaw/impyute">impyute</a> - Imputations.<br />
+<a href="https://github.com/iskandr/fancyimpute">fancyimpute</a> - Matrix completion and imputation algorithms.<br />
+<a href="https://github.com/scikit-learn-contrib/imbalanced-learn">imbalanced-learn</a> - Resampling for imbalanced datasets.<br />
+<a href="https://github.com/MaxBenChrist/tspreprocess">tspreprocess</a> - Time series preprocessing: Denoising, Compression, Resampling.<br />
+<a href="https://github.com/jeongyoonlee/Kaggler">Kaggler</a> - Utility functions (<code>OneHotEncoder(min_obs=100)</code>)<br />
+<a href="https://github.com/ImSoErgodic/py-upset">pyupset</a> - Visualizing intersecting sets.<br />
+<a href="https://github.com/wmayner/pyemd">pyemd</a> - Earth Mover's Distance, similarity between histograms.  </p>
+<h4 id="train-test-split">Train / Test Split</h4>
+<p><a href="https://github.com/trent-b/iterative-stratification">iterative-stratification</a> - Stratification of multilabel data.  </p>
+<h4 id="feature-engineering">Feature Engineering</h4>
+<p><a href="https://www.youtube.com/watch?v=68ABAU_V8qI">Talk</a><br />
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html">sklearn</a> - Pipeline, <a href="https://github.com/jem1031/pandas-pipelines-custom-transformers">examples</a>.<br />
+<a href="https://github.com/shaypal5/pdpipe">pdpipe</a> - Pipelines for DataFrames.<br />
+<a href="https://github.com/koaning/scikit-lego">scikit-lego</a> - Custom transformers for pipelines.<br />
+<a href="https://github.com/lacava/few">few</a> - Feature engineering wrapper for sklearn.<br />
+<a href="https://github.com/tgsmith61591/skoot">skoot</a> - Pipeline helper functions.<br />
+<a href="https://github.com/scikit-learn-contrib/categorical-encoding">categorical-encoding</a> - Categorical encoding of variables, <a href="https://cran.r-project.org/web/packages/vtreat/vignettes/vtreat.html">vtreat (R package)</a>.<br />
+<a href="https://github.com/dirty-cat/dirty_cat">dirty_cat</a> - Encoding dirty categorical variables.<br />
+<a href="https://github.com/pydata/patsy/">patsy</a> - R-like syntax for statistical models.<br />
+<a href="https://rasbt.github.io/mlxtend/user_guide/feature_extraction/LinearDiscriminantAnalysis/">mlxtend</a> - LDA.<br />
+<a href="https://github.com/Featuretools/featuretools">featuretools</a> - Automated feature engineering, <a href="https://github.com/WillKoehrsen/automated-feature-engineering/blob/master/walk_through/Automated_Feature_Engineering.ipynb">example</a>.<br />
+<a href="https://github.com/blue-yonder/tsfresh">tsfresh</a> - Time series feature engineering.<br />
+<a href="https://github.com/cgarciae/pypeln">pypeln</a> - Concurrent data pipelines.<br />
+<a href="https://github.com/solegalli/feature_engine">feature_engine</a> - Encoders, transformers, etc.  </p>
+<h4 id="feature-selection">Feature Selection</h4>
+<p><a href="https://www.youtube.com/watch?v=JsArBz46_3s">Talk</a><br />
+Blog post series - <a href="http://blog.datadive.net/selecting-good-features-part-i-univariate-selection/">1</a>, <a href="http://blog.datadive.net/selecting-good-features-part-ii-linear-models-and-regularization/">2</a>, <a href="http://blog.datadive.net/selecting-good-features-part-iii-random-forests/">3</a>, <a href="http://blog.datadive.net/selecting-good-features-part-iv-stability-selection-rfe-and-everything-side-by-side/">4</a><br />
+Tutorials - <a href="https://www.kaggle.com/residentmario/automated-feature-selection-with-sklearn">1</a>, <a href="https://machinelearningmastery.com/feature-selection-machine-learning-python/">2</a><br />
+<a href="https://scikit-learn.org/stable/modules/classes.html#module-sklearn.feature_selection">sklearn</a> - Feature selection.<br />
+<a href="https://eli5.readthedocs.io/en/latest/blackbox/permutation_importance.html#feature-selection">eli5</a> - Feature selection using permutation importance.<br />
+<a href="https://github.com/jundongl/scikit-feature">scikit-feature</a> - Feature selection algorithms.<br />
+<a href="https://github.com/scikit-learn-contrib/stability-selection">stability-selection</a> - Stability selection.<br />
+<a href="https://github.com/EpistasisLab/scikit-rebate">scikit-rebate</a> - Relief-based feature selection algorithms.<br />
+<a href="https://github.com/manuel-calzolari/sklearn-genetic">scikit-genetic</a> - Genetic feature selection.<br />
+<a href="https://github.com/scikit-learn-contrib/boruta_py">boruta_py</a> - Feature selection, <a href="https://stats.stackexchange.com/questions/264360/boruta-all-relevant-feature-selection-vs-random-forest-variables-of-importanc/264467">explaination</a>, <a href="https://www.kaggle.com/tilii7/boruta-feature-elimination">example</a>.<br />
+<a href="https://github.com/efavdb/linselect">linselect</a> - Feature selection package.<br />
+<a href="https://rasbt.github.io/mlxtend/user_guide/feature_selection/ExhaustiveFeatureSelector/">mlxtend</a> - Exhaustive feature selection.   <br />
+<a href="https://github.com/chasedehan/BoostARoota">BoostARoota</a> - Xgboost feature selection algorithm.  </p>
+<h4 id="dimensionality-reduction">Dimensionality Reduction</h4>
+<p><a href="https://www.youtube.com/watch?v=9iol3Lk6kyU">Talk</a><br />
+<a href="https://github.com/MaxHalford/prince">prince</a> - Dimensionality reduction, factor analysis (PCA, MCA, CA, FAMD).<br />
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.MDS.html">sklearn</a> - Multidimensional scaling (MDS).<br />
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html">sklearn</a> - t-distributed Stochastic Neighbor Embedding (t-SNE), <a href="https://distill.pub/2016/misread-tsne/">intro</a>. Faster implementations: <a href="https://lvdmaaten.github.io/tsne/">lvdmaaten</a>, <a href="https://github.com/DmitryUlyanov/Multicore-TSNE">MulticoreTSNE</a>.<br />
+<a href="https://github.com/KlugerLab/FIt-SNE">FIt-SNE</a> - Fast Fourier Transform-accelerated Interpolation-based t-SNE.<br />
+<a href="https://github.com/lmcinnes/umap">umap</a> - Uniform Manifold Approximation and Projection, <a href="https://www.youtube.com/watch?v=nq6iPZVUxZU">talk</a>, <a href="https://github.com/GrantCuster/umap-explorer">explorer</a>, <a href="https://pair-code.github.io/understanding-umap/">explanation</a>.<br />
+<a href="https://github.com/anders-biostat/sleepwalk/">sleepwalk</a> - Explore embeddings, interactive visualization (R package).<br />
+<a href="https://github.com/scikit-tda/scikit-tda">scikit-tda</a> - Topological Data Analysis, <a href="https://www.nature.com/articles/srep01236">paper</a>, <a href="https://www.youtube.com/watch?v=F2t_ytTLrQ4">talk</a>, <a href="https://www.youtube.com/watch?v=AWoeBzJd7uQ">talk</a>.<br />
+<a href="https://github.com/EpistasisLab/scikit-mdr">mdr</a> - Dimensionality reduction, multifactor dimensionality reduction (MDR).<br />
+<a href="http://scikit-learn.org/stable/modules/generated/sklearn.decomposition.TruncatedSVD.html">sklearn</a> - Truncated SVD (aka LSA). <br />
+<a href="https://github.com/beringresearch/ivis">ivis</a> - Dimensionality reduction using Siamese Networks.<br />
+<a href="https://github.com/eamid/trimap">trimap</a> - Dimensionality reduction using triplets.  </p>
+<h4 id="visualization">Visualization</h4>
+<p><a href="https://datavizproject.com/">All charts</a>, <a href="https://github.com/njanakiev/austrian-monuments-visualization">Austrian monuments</a>.<br />
+<a href="https://github.com/santosjorge/cufflinks">cufflinks</a> - Dynamic visualization library, wrapper for <a href="https://plot.ly/">plotly</a>, <a href="https://towardsdatascience.com/the-next-level-of-data-visualization-in-python-dd6e99039d5e">medium</a>, <a href="https://github.com/WillKoehrsen/Data-Analysis/blob/master/plotly/Plotly%20Whirlwind%20Introduction.ipynb">example</a>.<br />
+<a href="https://github.com/janpipek/physt">physt</a> - Better histograms, <a href="https://www.youtube.com/watch?v=ZG-wH3-Up9Y">talk</a>, <a href="https://nbviewer.jupyter.org/github/janpipek/pydata2018-berlin/blob/master/notebooks/talk.ipynb">notebook</a>.<br />
+<a href="https://github.com/konstantint/matplotlib-venn">matplotlib_venn</a> - Venn diagrams, <a href="https://github.com/penrose/penrose">alternative</a>.<br />
+<a href="https://github.com/sbebo/joypy">joypy</a> - Draw stacked density plots.<br />
+<a href="https://www.statsmodels.org/dev/generated/statsmodels.graphics.mosaicplot.mosaic.html">mosaic plots</a> - Categorical variable visualization, <a href="https://sukhbinder.wordpress.com/2018/09/18/mosaic-plot-in-python/">example</a>.<br />
+<a href="https://github.com/reiinakano/scikit-plot">scikit-plot</a> - ROC curves and other visualizations for ML models.<br />
+<a href="https://github.com/DistrictDataLabs/yellowbrick">yellowbrick</a> - Visualizations for ML models (similar to scikit-plot).<br />
+<a href="https://bokeh.pydata.org/en/latest/">bokeh</a> - Interactive visualization library, <a href="https://bokeh.pydata.org/en/latest/docs/user_guide/server.html">Examples</a>, <a href="https://github.com/WillKoehrsen/Bokeh-Python-Visualization">Examples</a>.<br />
+<a href="https://github.com/t-makaro/animatplot">animatplot</a> - Animate plots build on matplotlib.<br />
+<a href="https://github.com/has2k1/plotnine">plotnine</a> - ggplot for Python.<br />
+<a href="https://altair-viz.github.io/">altair</a> - Declarative statistical visualization library.<br />
+<a href="https://github.com/bloomberg/bqplot">bqplot</a> - Plotting library for IPython/Jupyter Notebooks.<br />
+<a href="https://github.com/pyviz/hvplot">hvplot</a> - High-level plotting library built on top of <a href="http://holoviews.org/">holoviews</a>.<br />
+<a href="https://github.com/parrt/dtreeviz">dtreeviz</a> - Decision tree visualization and model interpretation.<br />
+<a href="https://github.com/spotify/chartify/">chartify</a> - Generate charts.<br />
+<a href="https://github.com/anvaka/VivaGraphJS">VivaGraphJS</a> - Graph visualization (JS package).<br />
+<a href="https://github.com/anvaka/pm">pm</a> - Navigatable 3D graph visualization (JS package), <a href="https://w2v-vis-dot-hcg-team-di.appspot.com/#/galaxy/word2vec?cx=5698&amp;cy=-5135&amp;cz=5923&amp;lx=0.1127&amp;ly=0.3238&amp;lz=-0.1680&amp;lw=0.9242&amp;ml=150&amp;s=1.75&amp;l=1&amp;v=hc">example</a>.<br />
+<a href="https://github.com/marcharper/python-ternary">python-ternary</a> - Triangle plots.<br />
+<a href="https://github.com/uwdata/falcon">falcon</a> - Interactive visualizations for big data.  </p>
+<h4 id="dashboards">Dashboards</h4>
+<p><a href="https://dash.plot.ly/gallery">dash</a> - Dashboarding solution by plot.ly. Tutorial: <a href="https://www.youtube.com/watch?v=J_Cy_QjG6NE">1</a>, <a href="https://www.youtube.com/watch?v=hRH01ZzT2NI">2</a>, <a href="https://www.youtube.com/watch?v=wv2MXJIdKRY">3</a>, <a href="https://www.youtube.com/watch?v=37Zj955LFT0">4</a>, <a href="https://www.youtube.com/watch?v=luixWRpp6Jo">5</a>, <a href="https://github.com/ucg8j/awesome-dash">resources</a>     <br />
+<a href="https://panel.pyviz.org/index.html">panel</a> - Dashboarding solution.<br />
+<a href="https://github.com/bokeh/bokeh">bokeh</a> - Dashboarding solution.<br />
+<a href="https://github.com/facebookresearch/visdom">visdom</a> - Dashboarding library by facebook.<br />
+<a href="https://github.com/xhochy/altair-vue-vega-example">altair example</a> - <a href="https://www.youtube.com/watch?v=4L568emKOvs">Video</a>.<br />
+<a href="https://github.com/QuantStack/voila">voila</a> - Turn Jupyter notebooks into standalone web applications.<br />
+<a href="https://github.com/streamlit/streamlit">streamlit</a> - Dashboards.  </p>
+<h4 id="geopraphical-tools">Geopraphical Tools</h4>
+<p><a href="https://github.com/python-visualization/folium">folium</a> - Plot geographical maps using the Leaflet.js library, <a href="https://github.com/jupyter-widgets/ipyleaflet">jupyter plugin</a>.<br />
+<a href="https://github.com/pbugnion/gmaps">gmaps</a> - Google Maps for Jupyter notebooks.<br />
+<a href="https://stadiamaps.com/">stadiamaps</a> - Plot geographical maps.<br />
+<a href="https://github.com/bokeh/datashader">datashader</a> - Draw millions of points on a map.<br />
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.BallTree.html">sklearn</a> - BallTree, <a href="https://tech.minodes.com/experiments-with-in-memory-spatial-radius-queries-in-python-e40c9e66cf63">Example</a>.<br />
+<a href="https://github.com/lmcinnes/pynndescent">pynndescent</a> - Nearest neighbor descent for approximate nearest neighbors.<br />
+<a href="https://github.com/DenisCarriere/geocoder">geocoder</a> - Geocoding of addresses, IP addresses.<br />
+Conversion of different geo formats: <a href="https://www.youtube.com/watch?v=eHRggqAvczE">talk</a>, <a href="https://github.com/dillongardner/PyDataSpatialAnalysis">repo</a><br />
+<a href="https://github.com/geopandas/geopandas">geopandas</a> - Tools for geographic data<br />
+Low Level Geospatial Tools (GEOS, GDAL/OGR, PROJ.4)<br />
+Vector Data (Shapely, Fiona, Pyproj)<br />
+Raster Data (Rasterio)<br />
+Plotting (Descartes, Catropy)<br />
+Predict economic indicators from Open Street Map <a href="https://github.com/njanakiev/osm-predict-economic-measurements/blob/master/osm-predict-economic-indicators.ipynb">ipynb</a>.<br />
+<a href="https://github.com/pysal/pysal">PySal</a> - Python Spatial Analysis Library.<br />
+<a href="https://github.com/ushahidi/geograpy">geography</a> - Extract countries, regions and cities from a URL or text.<br />
+<a href="https://go-cart.io/cartogram">cartogram</a> - Distorted maps based on population.  </p>
+<h4 id="recommender-systems">Recommender Systems</h4>
+<p>Examples: <a href="https://lazyprogrammer.me/tutorial-on-collaborative-filtering-and-matrix-factorization-in-python/">1</a>, <a href="https://medium.com/@james_aka_yale/the-4-recommendation-engines-that-can-predict-your-movie-tastes-bbec857b8223">2</a>, <a href="https://github.com/khanhnamle1994/movielens/blob/master/Content_Based_and_Collaborative_Filtering_Models.ipynb">2-ipynb</a>, <a href="https://www.kaggle.com/morrisb/how-to-recommend-anything-deep-recommender">3</a>.<br />
+<a href="https://github.com/NicolasHug/Surprise">surprise</a> - Recommender, <a href="https://www.youtube.com/watch?v=d7iIb_XVkZs">talk</a>.<br />
+<a href="https://github.com/apple/turicreate">turicreate</a> - Recommender.<br />
+<a href="https://github.com/benfred/implicit">implicit</a> - Fast Collaborative Filtering for Implicit Feedback Datasets.<br />
+<a href="https://github.com/maciejkula/spotlight">spotlight</a> - Deep recommender models using PyTorch.<br />
+<a href="https://github.com/lyst/lightfm">lightfm</a> - Recommendation algorithms for both implicit and explicit feedback.<br />
+<a href="https://github.com/gbolmier/funk-svd">funk-svd</a> - Fast SVD.<br />
+<a href="https://github.com/jfloff/pywFM">pywFM</a> - Factorization.  </p>
+<h4 id="decision-tree-models">Decision Tree Models</h4>
+<p><a href="https://victorzhou.com/blog/intro-to-random-forests/">Intro to Decision Trees and Random Forests</a>, <a href="http://blog.kaggle.com/2017/01/23/a-kaggle-master-explains-gradient-boosting/">Intro to Gradient Boosting</a>  <br />
+<a href="https://github.com/Microsoft/LightGBM">lightgbm</a> - Gradient boosting (GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, <a href="https://sites.google.com/view/lauraepp/parameters">doc</a>.<br />
+<a href="https://github.com/dmlc/xgboost">xgboost</a> - Gradient boosting (GBDT, GBRT or GBM) library, <a href="https://sites.google.com/view/lauraepp/parameters">doc</a>, Methods for CIs: <a href="https://stats.stackexchange.com/questions/255783/confidence-interval-for-xgb-forecast">link1</a>, <a href="https://towardsdatascience.com/regression-prediction-intervals-with-xgboost-428e0a018b">link2</a>.<br />
+<a href="https://github.com/catboost/catboost">catboost</a> - Gradient boosting.<br />
+<a href="https://github.com/Xtra-Computing/thundergbm">thundergbm</a> - GBDTs and Random Forest.<br />
+<a href="https://github.com/h2oai/h2o-3">h2o</a> - Gradient boosting.<br />
+<a href="https://github.com/scikit-learn-contrib/forest-confidence-interval">forestci</a> - Confidence intervals for random forests.<br />
+<a href="https://github.com/scikit-garden/scikit-garden">scikit-garden</a> - Quantile Regression.<br />
+<a href="https://github.com/grf-labs/grf">grf</a> - Generalized random forest.<br />
+<a href="https://github.com/parrt/dtreeviz">dtreeviz</a> - Decision tree visualization and model interpretation.<br />
+<a href="https://github.com/SauceCat/Nuance">Nuance</a> - Decision tree visualization.<br />
+<a href="https://github.com/parrt/random-forest-importances">rfpimp</a> - Feature Importance for RandomForests using Permuation Importance.<br />
+Why the default feature importance for random forests is wrong: <a href="http://explained.ai/rf-importance/index.html">link</a><br />
+<a href="https://github.com/andosa/treeinterpreter">treeinterpreter</a> - Interpreting scikit-learn's decision tree and random forest predictions.<br />
+<a href="https://github.com/JakeColtman/bartpy">bartpy</a> - Bayesian Additive Regression Trees.<br />
+<a href="https://github.com/arogozhnikov/infiniteboost">infiniteboost</a> - Combination of RFs and GBDTs.<br />
+<a href="https://github.com/manifoldai/merf">merf</a> - Mixed Effects Random Forest for Clustering, <a href="https://www.youtube.com/watch?v=gWj4ZwB7f3o">video</a><br />
+<a href="https://github.com/kLabUM/rrcf">rrcf</a> - Robust Random Cut Forest algorithm for anomaly detection on streams.  </p>
+<h4 id="natural-language-processing-nlp-text-processing">Natural Language Processing (NLP) / Text Processing</h4>
+<p><a href="https://www.youtube.com/watch?v=6zm9NC9uRkk">talk</a>-<a href="https://nbviewer.jupyter.org/github/skipgram/modern-nlp-in-python/blob/master/executable/Modern_NLP_in_Python.ipynb">nb</a>, <a href="https://ahmedbesbes.com/how-to-mine-newsfeed-data-and-extract-interactive-insights-in-python.html">nb2</a>, <a href="https://www.youtube.com/watch?time_continue=2&amp;v=sI7VpFNiy_I">talk</a>.<br />
+<a href="https://mlwhiz.com/blog/2018/12/17/text_classification/">Text classification Intro</a>, <a href="https://mlwhiz.com/blog/2019/01/17/deeplearning_nlp_preprocess/">Preprocessing blog post</a>.<br />
+<a href="https://radimrehurek.com/gensim/">gensim</a> - NLP, doc2vec, word2vec, text processing, topic modelling (LSA, LDA), <a href="https://markroxor.github.io/gensim/static/notebooks/gensim_news_classification.html">Example</a>, <a href="https://radimrehurek.com/gensim/models/coherencemodel.html">Coherence Model</a> for evaluation.<br />
+Embeddings - <a href="https://nlp.stanford.edu/projects/glove/">GloVe</a> ([<a href="https://www.kaggle.com/jhoward/improved-lstm-baseline-glove-dropout">1</a>], [<a href="https://www.kaggle.com/sbongo/do-pretrained-embeddings-give-you-the-extra-edge">2</a>]), <a href="https://github.com/facebookresearch/StarSpace">StarSpace</a>, <a href="https://wikipedia2vec.github.io/wikipedia2vec/pretrained/">wikipedia2vec</a>, <a href="https://projector.tensorflow.org/">visualization</a>.<br />
+<a href="https://github.com/plasticityai/magnitude">magnitude</a> - Vector embedding utility package.<br />
+<a href="https://github.com/bmabey/pyLDAvis">pyldavis</a> - Visualization for topic modelling.<br />
+<a href="https://spacy.io/">spaCy</a> - NLP.<br />
+<a href="https://www.nltk.org/">NTLK</a> - NLP, helpful <code>KMeansClusterer</code> with <code>cosine_distance</code>.<br />
+<a href="https://github.com/facebookresearch/PyText">pytext</a> - NLP from Facebook.<br />
+<a href="https://github.com/facebookresearch/fastText">fastText</a> - Efficient text classification and representation learning.<br />
+<a href="https://github.com/spotify/annoy">annoy</a> - Approximate nearest neighbor search.<br />
+<a href="https://github.com/facebookresearch/faiss">faiss</a> - Approximate nearest neighbor search.<br />
+<a href="https://github.com/facebookresearch/pysparnn">pysparnn</a> - Approximate nearest neighbor search.<br />
+<a href="https://github.com/mapequation/infomap">infomap</a> - Cluster (word-)vectors to find topics, <a href="https://github.com/mapequation/infomap/blob/master/examples/python/infomap-examples.ipynb">example</a>.<br />
+<a href="https://github.com/ekzhu/datasketch">datasketch</a> - Probabilistic data structures for large data (MinHash, HyperLogLog).<br />
+<a href="https://github.com/zalandoresearch/flair">flair</a> - NLP Framework by Zalando.<br />
+<a href="https://github.com/stanfordnlp/stanfordnlp">stanfordnlp</a> - NLP Library.<br />
+<a href="https://github.com/MasterScrat/Chatistics">Chatistics</a> - Turn Messenger, Hangouts, WhatsApp and Telegram chat logs into DataFrames.  </p>
+<h5 id="papers">Papers</h5>
+<p><a href="https://arxiv.org/pdf/1107.2691.pdf">Search Engine Correlation</a>  </p>
+<h4 id="biology">Biology</h4>
+<h5 id="sequencing">Sequencing</h5>
+<p><a href="https://github.com/theislab/scanpy">scanpy</a> - Analyze single-cell gene expression data, <a href="https://github.com/theislab/single-cell-tutorial">tutorial</a>.  </p>
+<h5 id="image-related">Image-related</h5>
+<p><a href="http://luispedro.org/software/mahotas/">mahotas</a> - Image processing (Bioinformatics), <a href="https://github.com/luispedro/python-image-tutorial/blob/master/Segmenting%20cell%20images%20(fluorescent%20microscopy).ipynb">example</a>. <br />
+<a href="https://github.com/Image-Py/imagepy">imagepy</a> - Software package for bioimage analysis.<br />
+<a href="https://github.com/CellProfiler/CellProfiler">CellProfiler</a> - Biological image analysis. <br />
+<a href="https://github.com/imglib/imglyb">imglyb</a> - Viewer for large images, <a href="https://www.youtube.com/watch?v=Ddo5z5qGMb8">talk</a>, <a href="https://github.com/hanslovsky/scipy-2019/blob/master/scipy-2019-imglyb.pdf">slides</a>.<br />
+<a href="https://github.com/microscopium/microscopium">microscopium</a> - Unsupervised clustering of images + viewer, <a href="https://www.youtube.com/watch?v=ytEQl9xs8FQ">talk</a>.<br />
+<a href="https://github.com/hammerlab/cytokit">cytokit</a> - Analyzing properties of cells in fluorescent microscopy datasets.  </p>
+<h4 id="image-processing">Image Processing</h4>
+<p><a href="https://www.youtube.com/watch?v=Y5GJmnIhvFk">Talk</a><br />
+<a href="https://github.com/skvark/opencv-python">cv2</a> - OpenCV, classical algorithms: <a href="https://docs.opencv.org/3.1.0/d4/d13/tutorial_py_filtering.html">Gaussian Filter</a>, <a href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html">Morphological Transformations</a>.<br />
+<a href="https://github.com/scikit-image/scikit-image">scikit-image</a> - Image processing.  </p>
+<h4 id="neural-networks">Neural Networks</h4>
+<h5 id="tutorials-viewer">Tutorials &amp; Viewer</h5>
+<p><a href="https://cs231n.github.io/">Convolutional Neural Networks for Visual Recognition</a><br />
+fast.ai course - <a href="https://course.fast.ai/videos/?lesson=1">Lessons 1-7</a>, <a href="http://course18.fast.ai/lessons/lessons2.html">Lessons 8-14</a><br />
+<a href="https://github.com/GoogleCloudPlatform/tensorflow-without-a-phd">Tensorflow without a PhD</a> - Neural Network course by Google.<br />
+Feature Visualization: <a href="https://distill.pub/2017/feature-visualization/">Blog</a>, <a href="http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture12.pdf">PPT</a><br />
+<a href="https://playground.tensorflow.org/">Tensorflow Playground</a><br />
+<a href="https://vis.ensmallen.org/">Visualization of optimization algorithms</a>, <a href="https://github.com/jettify/pytorch-optimizer">Another visualization</a>  <br />
+<a href="https://github.com/mgckind/cutouts-explorer">cutouts-explorer</a> - Image Viewer.  </p>
+<h5 id="image-related_1">Image Related</h5>
+<p><a href="https://github.com/aleju/imgaug">imgaug</a> - More sophisticated image preprocessing.<br />
+<a href="https://github.com/mdbloice/Augmentor">Augmentor</a> - Image augmentation library.<br />
+<a href="https://keras.io/preprocessing/image/">keras preprocessing</a> - Preprocess images.<br />
+<a href="https://github.com/albu/albumentations">albumentations</a> - Wrapper around imgaug and other libraries.<br />
+<a href="https://github.com/google-research/augmix">augmix</a> - Image augmentation from Google.<br />
+<a href="https://github.com/kornia/kornia">kornia</a> - Image augmentation, feature extraction and loss functions.  </p>
+<h5 id="lossfunction-related">Lossfunction Related</h5>
+<p><a href="https://github.com/JunMa11/SegLoss">SegLoss</a> - List of loss functions for medical image segmentation.  </p>
+<h4 id="text-related">Text Related</h4>
+<p><a href="https://github.com/hamelsmu/ktext">ktext</a> - Utilities for pre-processing text for deep learning in Keras. <br />
+<a href="https://github.com/minimaxir/textgenrnn">textgenrnn</a> - Ready-to-use LSTM for text generation.  <br />
+<a href="https://github.com/salesforce/ctrl">ctrl</a> - Text generation.  </p>
+<h5 id="libs">Libs</h5>
+<p><a href="https://keras.io/">keras</a> - Neural Networks on top of <a href="https://www.tensorflow.org/">tensorflow</a>, <a href="https://gist.github.com/candlewill/552fa102352ccce42fd829ae26277d24">examples</a>.<br />
+<a href="https://github.com/keras-team/keras-contrib">keras-contrib</a> - Keras community contributions.<br />
+<a href="https://github.com/keras-team/keras-tuner">keras-tuner</a> - Hyperparameter tuning for Keras.<br />
+<a href="https://github.com/maxpumperla/hyperas">hyperas</a> - Keras + Hyperopt: Convenient hyperparameter optimization wrapper.<br />
+<a href="https://github.com/maxpumperla/elephas">elephas</a> - Distributed Deep learning with Keras &amp; Spark.<br />
+<a href="https://github.com/tflearn/tflearn">tflearn</a> - Neural Networks on top of tensorflow.<br />
+<a href="https://github.com/tensorlayer/tensorlayer">tensorlayer</a> -  Neural Networks on top of tensorflow, <a href="https://github.com/wagamamaz/tensorlayer-tricks">tricks</a>.<br />
+<a href="https://github.com/reinforceio/tensorforce">tensorforce</a> - Tensorflow for applied reinforcement learning.<br />
+<a href="https://github.com/fastai/fastai">fastai</a> - Neural Networks in pytorch.<br />
+<a href="https://github.com/jettify/pytorch-optimizer">pytorch-optimizer</a> - Collection of optimizers for pytorch.<br />
+<a href="https://github.com/pytorch/ignite">ignite</a> - Highlevel library for pytorch.<br />
+<a href="https://github.com/dnouri/skorch">skorch</a> - Scikit-learn compatible neural network library that wraps pytorch, <a href="https://www.youtube.com/watch?v=0J7FaLk0bmQ">talk</a>, <a href="https://github.com/thomasjpfan/skorch_talk">slides</a>.<br />
+<a href="https://github.com/jhfjhfj1/autokeras">autokeras</a> - AutoML for deep learning.<br />
+<a href="https://github.com/HarisIqbal88/PlotNeuralNet">PlotNeuralNet</a> - Plot neural networks.<br />
+<a href="https://github.com/tensorflow/lucid">lucid</a> - Neural network interpretability, <a href="https://openai.com/blog/introducing-activation-atlases/">Activation Maps</a>.<br />
+<a href="https://github.com/tensorflow/tcav">tcav</a> - Interpretability method.<br />
+<a href="https://github.com/Luolc/AdaBound">AdaBound</a> - Optimizer that trains as fast as Adam and as good as SGD, <a href="https://github.com/titu1994/keras-adabound">alt</a>.   <br />
+<a href="https://github.com/bethgelab/foolbox">foolbox</a> - Adversarial examples that fool neural networks.<br />
+<a href="https://github.com/waleedka/hiddenlayer">hiddenlayer</a> - Training metrics.<br />
+<a href="https://github.com/osmr/imgclsmob">imgclsmob</a> - Pretrained models.<br />
+<a href="https://github.com/lutzroeder/netron">netron</a> - Visualizer for deep learning and machine learning models.<br />
+<a href="https://github.com/donnyyou/torchcv">torchcv</a> - Deep Learning in Computer Vision.  </p>
+<h4 id="training-related">Training-related</h4>
+<p><a href="https://github.com/stared/livelossplot">livelossplot</a> - Live training loss plot in Jupyter Notebook.  </p>
+<h4 id="object-detection-instance-segmentation">Object detection / Instance Segmentation</h4>
+<p><a href="https://github.com/dbolya/yolact">yolact</a> - Fully convolutional model for real-time instance segmentation.<br />
+<a href="https://github.com/toandaominh1997/EfficientDet.Pytorch">EfficientDet Pytorch</a>, <a href="https://github.com/xuannianz/EfficientDet">EfficientDet Keras</a> - Scalable and Efficient Object Detection.<br />
+<a href="https://github.com/facebookresearch/detectron2">detectron2</a> - Object Detection (Mask R-CNN) by Facebook.<br />
+<a href="https://github.com/TuSimple/simpledet">simpledet</a> - Object Detection and Instance Recognition.<br />
+<a href="https://github.com/xingyizhou/CenterNet">CenterNet</a> - Object detection.<br />
+<a href="https://github.com/tianzhi0549/FCOS">FCOS</a> - Fully Convolutional One-Stage Object Detection.    </p>
+<h4 id="image-classification">Image Classification</h4>
+<p><a href="https://github.com/lukemelas/EfficientNet-PyTorch">efficientnet</a> - Promising neural network architecture.  </p>
+<h5 id="applications-and-snippets">Applications and Snippets</h5>
+<p><a href="https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix">CycleGAN and Pix2pix</a> - Various image-to-image tasks.<br />
+<a href="https://github.com/nvlabs/spade">SPADE</a> - Semantic Image Synthesis.<br />
+<a href="https://arxiv.org/abs/1604.06737">Entity Embeddings of Categorical Variables</a>, <a href="https://github.com/entron/entity-embedding-rossmann">code</a>, <a href="https://www.kaggle.com/aquatic/entity-embedding-neural-net/code">kaggle</a><br />
+<a href="https://github.com/idealo/image-super-resolution">Image Super-Resolution</a> - Super-scaling using a Residual Dense Network.<br />
+Cell Segmentation - <a href="https://www.youtube.com/watch?v=dVFZpodqJiI">Talk</a>, Blog Posts: <a href="https://www.thomasjpfan.com/2018/07/nuclei-image-segmentation-tutorial/">1</a>, <a href="https://www.thomasjpfan.com/2017/08/hassle-free-unets/">2</a><br />
+<a href="https://github.com/rasbt/deeplearning-models">deeplearning-models</a> - Deep learning models.  </p>
+<h4 id="gpu">GPU</h4>
+<p><a href="https://github.com/rapidsai/cuml">cuML</a> - Run traditional tabular ML tasks on GPUs.<br />
+<a href="https://github.com/Xtra-Computing/thundergbm">thundergbm</a> - GBDTs and Random Forest.<br />
+<a href="https://github.com/Xtra-Computing/thundersvm">thundersvm</a> - Support Vector Machines.  </p>
+<h4 id="regression">Regression</h4>
+<p>Understanding SVM Regression: <a href="https://cs.adelaide.edu.au/~chhshen/teaching/ML_SVR.pdf">slides</a>, <a href="https://www.quora.com/How-does-support-vector-regression-work">forum</a>, <a href="http://alex.smola.org/papers/2003/SmoSch03b.pdf">paper</a>  </p>
+<p><a href="https://github.com/scikit-learn-contrib/py-earth">pyearth</a> - Multivariate Adaptive Regression Splines (MARS), <a href="https://uc-r.github.io/mars">tutorial</a>.<br />
+<a href="https://github.com/dswah/pyGAM">pygam</a> - Generalized Additive Models (GAMs), <a href="https://multithreaded.stitchfix.com/blog/2015/07/30/gam/">Explanation</a>.<br />
+<a href="https://github.com/madeleineudell/LowRankModels.jl">GLRM</a> - Generalized Low Rank Models.<br />
+<a href="https://xgboost.readthedocs.io/en/latest/parameter.html#parameters-for-tweedie-regression-objective-reg-tweedie">tweedie</a> - Specialized distribution for zero inflated targets, <a href="https://www.youtube.com/watch?v=-o0lpHBq85I">Talk</a>.  </p>
+<h4 id="classification">Classification</h4>
+<p><a href="https://www.youtube.com/watch?v=DkLPYccEJ8Y">Talk</a>, <a href="https://github.com/ianozsvald/data_science_delivered/blob/master/ml_creating_correct_capable_classifiers.ipynb">Notebook</a><br />
+<a href="https://machinelearningmastery.com/how-to-score-probability-predictions-in-python/">Blog post: Probability Scoring</a><br />
+<a href="http://rali.iro.umontreal.ca/rali/sites/default/files/publis/SokolovaLapalme-JIPM09.pdf">All classification metrics</a><br />
+<a href="https://github.com/scikit-learn-contrib/DESlib">DESlib</a> - Dynamic classifier and ensemble selection  </p>
+<h4 id="clustering">Clustering</h4>
+<p><a href="https://deepnotes.io/deep-clustering">Overview of clustering algorithms applied image data (= Deep Clustering)</a><br />
+<a href="https://github.com/annoviko/pyclustering">pyclustering</a> - All sorts of clustering algorithms.<br />
+<a href="https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html">GaussianMixture</a> - Generalized k-means clustering using a mixture of Gaussian distributions, <a href="https://www.youtube.com/watch?v=aICqoAG5BXQ">video</a>.<br />
+<a href="https://github.com/peterwittek/somoclu">somoclu</a> - Self-organizing map.<br />
+<a href="https://github.com/scikit-learn-contrib/hdbscan">hdbscan</a> - Clustering algorithm, <a href="https://www.youtube.com/watch?v=dGsxd67IFiU">talk</a>.<br />
+<a href="https://github.com/nmslib/nmslib">nmslib</a> - Similarity search library and toolkit for evaluation of k-NN methods.<br />
+<a href="https://github.com/zjohn77/buckshotpp">buckshotpp</a> - Outlier-resistant and scalable clustering algorithm.<br />
+<a href="https://github.com/manifoldai/merf">merf</a> - Mixed Effects Random Forest for Clustering, <a href="https://www.youtube.com/watch?v=gWj4ZwB7f3o">video</a><br />
+<a href="https://github.com/isaacrob/treesne">tree-SNE</a> - Hierarchical clustering algorithm based on t-SNE.  </p>
+<h4 id="interpretable-classifiers-and-regressors">Interpretable Classifiers and Regressors</h4>
+<p><a href="https://github.com/scikit-learn-contrib/skope-rules">skope-rules</a> - Interpretable classifier, IF-THEN rules.<br />
+<a href="https://github.com/tmadl/sklearn-expertsys">sklearn-expertsys</a> - Interpretable classifiers, Bayesian Rule List classifier.  </p>
+<h4 id="multi-label-classification">Multi-label classification</h4>
+<p><a href="https://github.com/scikit-multilearn/scikit-multilearn">scikit-multilearn</a> - Multi-label classification, <a href="https://www.youtube.com/watch?v=m-tAASQA7XQ&amp;t=18m57s">talk</a>.  </p>
+<h4 id="signal-processing-and-filtering">Signal Processing and Filtering</h4>
+<p><a href="https://see.stanford.edu/Course/EE261">Stanford Lecture Series on Fourier Transformation</a>, <a href="https://www.youtube.com/watch?v=gZNm7L96pfY&amp;list=PLB24BC7956EE040CD&amp;index=1">Youtube</a>, <a href="https://see.stanford.edu/materials/lsoftaee261/book-fall-07.pdf">Lecture Notes</a>.<br />
+<a href="https://www.analog.com/en/education/education-library/scientist_engineers_guide.html">The Scientist &amp; Engineer's Guide to Digital Signal Processing (1999)</a>.<br />
+<a href="https://github.com/rlabbe/Kalman-and-Bayesian-Filters-in-Python">Kalman Filter book</a> - Focuses on intuition using Jupyter Notebooks. Includes Baysian and various Kalman filters.<br />
+<a href="https://fiiir.com/">Interactive Tool</a> for FIR and IIR filters, <a href="https://plot.ly/python/fft-filters/">Examples</a>.<br />
+<a href="https://github.com/rlabbe/filterpy">filterpy</a> - Kalman filtering and optimal estimation library.  </p>
+<h4 id="time-series">Time Series</h4>
+<p><a href="https://www.statsmodels.org/dev/tsa.html">statsmodels</a> - Time series analysis, <a href="https://www.statsmodels.org/dev/generated/statsmodels.tsa.seasonal.seasonal_decompose.html">seasonal decompose</a> <a href="https://gist.github.com/balzer82/5cec6ad7adc1b550e7ee">example</a>, <a href="https://www.statsmodels.org/dev/generated/statsmodels.tsa.statespace.sarimax.SARIMAX.html">SARIMA</a>, <a href="http://www.statsmodels.org/dev/generated/statsmodels.tsa.stattools.grangercausalitytests.html">granger causality</a>.<br />
+<a href="https://github.com/tgsmith61591/pyramid">pyramid</a>, <a href="https://github.com/tgsmith61591/pmdarima">pmdarima</a> - Wrapper for (Auto-) ARIMA.<br />
+<a href="https://github.com/RJT1990/pyflux">pyflux</a> - Time series prediction algorithms (ARIMA, GARCH, GAS, Bayesian).<br />
+<a href="https://github.com/facebook/prophet">prophet</a> - Time series prediction library.<br />
+<a href="https://github.com/firmai/atspy">atspy</a> - Automated Time Series Models.<br />
+<a href="https://github.com/luke14free/pm-prophet">pm-prophet</a> - Time series prediction and decomposition library.<br />
+<a href="https://github.com/CollinRooney12/htsprophet">htsprophet</a> - Hierarchical Time Series Forecasting using Prophet.<br />
+<a href="https://github.com/numenta/nupic">nupic</a> - Hierarchical Temporal Memory (HTM) for Time Series Prediction and Anomaly Detection.<br />
+<a href="https://github.com/tensorflow/tensorflow/">tensorflow</a> - LSTM and others, examples: <a href="https://machinelearningmastery.com/time-series-forecasting-long-short-term-memory-network-python/">link</a>, <a href="https://github.com/tensorflow/tensorflow/tree/master/tensorflow/contrib/timeseries">link</a>, <a href="https://github.com/hzy46/TensorFlow-Time-Series-Examples">link</a>, <a href="https://github.com/slundberg/shap/blob/master/notebooks/deep_explainer/Keras%20LSTM%20for%20IMDB%20Sentiment%20Classification.ipynb">Explain LSTM</a>, seq2seq: <a href="https://machinelearningmastery.com/how-to-develop-lstm-models-for-multi-step-time-series-forecasting-of-household-power-consumption/">1</a>, <a href="https://github.com/guillaume-chevalier/seq2seq-signal-prediction">2</a>, <a href="https://github.com/JEddy92/TimeSeries_Seq2Seq/blob/master/notebooks/TS_Seq2Seq_Intro.ipynb">3</a>, <a href="https://github.com/LukeTonin/keras-seq-2-seq-signal-prediction">4</a><br />
+<a href="https://github.com/MaxBenChrist/tspreprocess">tspreprocess</a> - Preprocessing: Denoising, Compression, Resampling.<br />
+<a href="https://github.com/blue-yonder/tsfresh">tsfresh</a> - Time series feature engineering.<br />
+<a href="https://github.com/thunder-project/thunder">thunder</a> - Data structures and algorithms for loading, processing, and analyzing time series data.<br />
+<a href="https://www.astroml.org/gatspy/">gatspy</a> - General tools for Astronomical Time Series, <a href="https://www.youtube.com/watch?v=E4NMZyfao2c">talk</a>.<br />
+<a href="https://github.com/IBCNServices/GENDIS">gendis</a> - shapelets, <a href="https://github.com/IBCNServices/GENDIS/blob/master/gendis/example.ipynb">example</a>.<br />
+<a href="https://github.com/rtavenar/tslearn">tslearn</a> - Time series clustering and classification, <code>TimeSeriesKMeans</code>, <code>TimeSeriesKMeans</code>.<br />
+<a href="https://pastas.readthedocs.io/en/latest/examples.html">pastas</a> - Simulation of time series.<br />
+<a href="https://github.com/slaypni/fastdtw">fastdtw</a> - Dynamic Time Warp Distance.<br />
+<a href="https://www.rdocumentation.org/packages/fable/versions/0.0.0.9000">fable</a> - Time Series Forecasting (R package).<br />
+<a href="https://github.com/tcassou/causal_impact">CausalImpact</a> - Causal Impact Analysis (<a href="https://google.github.io/CausalImpact/CausalImpact.html">R package</a>).<br />
+<a href="https://github.com/wwrechard/pydlm">pydlm</a> - Bayesian time series modeling (<a href="https://cran.r-project.org/web/packages/bsts/index.html">R package</a>, <a href="http://www.unofficialgoogledatascience.com/2017/07/fitting-bayesian-structural-time-series.html">Blog post</a>)<br />
+<a href="https://github.com/antoinecarme/pyaf">PyAF</a> - Automatic Time Series Forecasting.<br />
+<a href="https://github.com/linkedin/luminol">luminol</a> - Anomaly Detection and Correlation library from Linkedin.<br />
+<a href="https://github.com/target/matrixprofile-ts">matrixprofile-ts</a> - Detecting patterns and anomalies, <a href="https://www.cs.ucr.edu/~eamonn/MatrixProfile.html">website</a>, <a href="https://www.cs.ucr.edu/~eamonn/Matrix_Profile_Tutorial_Part1.pdf">ppt</a>, <a href="https://github.com/matrix-profile-foundation/mass-ts">alternative</a>.<br />
+<a href="https://github.com/TDAmeritrade/stumpy">stumpy</a> - Another matrix profile library.<br />
+<a href="https://github.com/obspy/obspy">obspy</a> - Seismology package. Useful <code>classic_sta_lta</code> function.<br />
+<a href="https://github.com/LeeDoYup/RobustSTL">RobustSTL</a> - Robust Seasonal-Trend Decomposition.<br />
+<a href="https://github.com/dmbee/seglearn">seglearn</a> - Time Series library.<br />
+<a href="https://github.com/johannfaouzi/pyts">pyts</a> - Time series transformation and classification, <a href="https://pyts.readthedocs.io/en/latest/auto_examples/index.html#imaging-time-series">Imaging time series</a>.<br />
+Turn time series into images and use Neural Nets: <a href="https://gist.github.com/oguiza/c9c373aec07b96047d1ba484f23b7b47">example</a>, <a href="https://github.com/kiss90/time-series-classification">example</a>.  <br />
+<a href="https://github.com/alan-turing-institute/sktime">sktime</a>, <a href="https://github.com/uea-machine-learning/sktime-dl">sktime-dl</a> - Toolbox for (deep) learning with time series. <br />
+<a href="https://github.com/arundo/adtk">adtk</a> - Time Series Anomaly Detection.  </p>
+<h5 id="time-series-evaluation">Time Series Evaluation</h5>
+<p><a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html">TimeSeriesSplit</a> - Sklearn time series split.<br />
+<a href="https://github.com/WenjieZ/TSCV">tscv</a> - Evaluation with gap.  </p>
+<h4 id="financial-data">Financial Data</h4>
+<p><a href="https://pandas-datareader.readthedocs.io/en/latest/whatsnew.html">pandas-datareader</a> - Read stock data.<br />
+<a href="https://github.com/pmorissette/ffn">ffn</a> - Financial functions.<br />
+<a href="https://github.com/pmorissette/bt">bt</a> - Backtesting algorithms.<br />
+<a href="https://github.com/alpacahq/alpaca-trade-api-python">alpaca-trade-api-python</a> - Commission-free trading through API.<br />
+The Quantopian Stack (some features may require signup on their platform):<br />
+<a href="https://github.com/quantopian/pyfolio">pyfolio</a> - Portfolio and risk analytics.<br />
+<a href="https://github.com/quantopian/zipline">zipline</a> - Algorithmic trading.<br />
+<a href="https://github.com/quantopian/alphalens">alphalens</a> - Performance analysis of predictive stock factors.<br />
+<a href="https://github.com/quantopian/empyrical">empyrical</a> - Financial risk metrics.  </p>
+<h4 id="survival-analysis">Survival Analysis</h4>
+<p><a href="https://stats.stackexchange.com/questions/101353/cox-regression-with-time-varying-covariates">Time-dependent Cox Model in R</a>.<br />
+<a href="https://lifelines.readthedocs.io/en/latest/">lifelines</a> - Survival analysis, Cox PH Regression, <a href="https://www.youtube.com/watch?v=aKZQUaNHYb0">talk</a>, <a href="https://www.youtube.com/watch?v=fli-yE5grtY">talk2</a>.<br />
+<a href="https://github.com/sebp/scikit-survival">scikit-survival</a> - Survival analysis.<br />
+<a href="https://github.com/dmlc/xgboost">xgboost</a> - <code>"objective": "survival:cox"</code> <a href="https://slundberg.github.io/shap/notebooks/NHANES%20I%20Survival%20Model.html">NHANES example</a><br />
+<a href="https://github.com/hammerlab/survivalstan">survivalstan</a> - Survival analysis, <a href="http://www.hammerlab.org/2017/06/26/introducing-survivalstan/">intro</a>.<br />
+<a href="https://github.com/better/convoys">convoys</a> - Analyze time lagged conversions.<br />
+RandomSurvivalForests (R packages: randomForestSRC, ggRandomForests).  </p>
+<h4 id="outlier-detection-anomaly-detection">Outlier Detection &amp; Anomaly Detection</h4>
+<p><a href="https://scikit-learn.org/stable/modules/outlier_detection.html">sklearn</a> - Isolation Forest and others.<br />
+<a href="https://pyod.readthedocs.io/en/latest/pyod.html">pyod</a> - Outlier Detection / Anomaly Detection.<br />
+<a href="https://github.com/sahandha/eif">eif</a> - Extended Isolation Forest.<br />
+<a href="https://github.com/twitter/AnomalyDetection">AnomalyDetection</a> - Anomaly detection (R package).<br />
+<a href="https://github.com/linkedin/luminol">luminol</a> - Anomaly Detection and Correlation library from Linkedin.<br />
+Distances for comparing histograms and detecting outliers - <a href="https://www.youtube.com/watch?v=U7xdiGc7IRU">Talk</a>: <a href="https://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.ks_2samp.html">Kolmogorov-Smirnov</a>, <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.wasserstein_distance.html">Wasserstein</a>, <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.energy_distance.html">Energy Distance (Cramer)</a>, <a href="https://scipy.github.io/devdocs/generated/scipy.stats.entropy.html">Kullback-Leibler divergence</a>.<br />
+<a href="https://github.com/tsurubee/banpei">banpei</a> - Anomaly detection library based on singular spectrum transformation.<br />
+<a href="https://github.com/khundman/telemanom">telemanom</a> - Detect anomalies in multivariate time series data using LSTMs.  </p>
+<h4 id="ranking">Ranking</h4>
+<p><a href="https://github.com/scikit-learn-contrib/lightning">lightning</a> - Large-scale linear classification, regression and ranking.  </p>
+<h4 id="scoring">Scoring</h4>
+<p><a href="https://github.com/ustunb/slim-python">SLIM</a> - Scoring systems for classification, Supersparse linear integer models.  </p>
+<h4 id="probabilistic-modeling-and-bayes">Probabilistic Modeling and Bayes</h4>
+<p><a href="https://erikbern.com/2018/10/08/the-hackers-guide-to-uncertainty-estimates.html">Intro</a>, <a href="https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers">Guide</a><br />
+<a href="https://docs.pymc.io/">PyMC3</a> - Baysian modelling, <a href="https://docs.pymc.io/notebooks/getting_started">intro</a><br />
+<a href="https://github.com/jmschrei/pomegranate">pomegranate</a> - Probabilistic modelling, <a href="https://www.youtube.com/watch?v=dE5j6NW-Kzg">talk</a>.<br />
+<a href="https://github.com/pymc-learn/pymc-learn">pmlearn</a> - Probabilistic machine learning.<br />
+<a href="https://github.com/arviz-devs/arviz">arviz</a> - Exploratory analysis of Bayesian models.<br />
+<a href="https://github.com/thu-ml/zhusuan">zhusuan</a> - Bayesian deep learning, generative models.<br />
+<a href="https://github.com/Microsoft/dowhy">dowhy</a> - Estimate causal effects.<br />
+<a href="https://github.com/blei-lab/edward">edward</a> - Probabilistic modeling, inference, and criticism, <a href="http://edwardlib.org/tutorials/mixture-density-network">Mixture Density Networks (MNDs)</a>, <a href="https://towardsdatascience.com/a-hitchhikers-guide-to-mixture-density-networks-76b435826cca">MDN Explanation</a>.<br />
+<a href="https://github.com/pyro-ppl/pyro">Pyro</a> - Deep Universal Probabilistic Programming.<br />
+<a href="https://github.com/tensorflow/probability">tensorflow probability</a> - Deep learning and probabilistic modelling, <a href="https://www.youtube.com/watch?v=BrwKURU-wpk">talk</a>, <a href="https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Chapter1_Introduction/Ch1_Introduction_TFP.ipynb">example</a>.<br />
+<a href="https://github.com/bambinos/bambi">bambi</a> - High-level Bayesian model-building interface on top of PyMC3.<br />
+<a href="https://github.com/google/neural-tangents">neural-tangents</a> - Infinite Neural Networks.  </p>
+<h4 id="stacking-models-and-ensembles">Stacking Models and Ensembles</h4>
+<p><a href="http://blog.kaggle.com/2017/06/15/stacking-made-easy-an-introduction-to-stacknet-by-competitions-grandmaster-marios-michailidis-kazanova/">Model Stacking Blog Post</a><br />
+<a href="https://github.com/rasbt/mlxtend">mlxtend</a> - <code>EnsembleVoteClassifier</code>, <code>StackingRegressor</code>, <code>StackingCVRegressor</code> for model stacking.<br />
+<a href="https://github.com/vecxoz/vecstack">vecstack</a> - Stacking ML models.<br />
+<a href="https://github.com/kaz-Anova/StackNet">StackNet</a> - Stacking ML models.<br />
+<a href="https://github.com/flennerhag/mlens">mlens</a> - Ensemble learning.  </p>
+<h4 id="model-evaluation">Model Evaluation</h4>
+<p><a href="https://github.com/sepandhaghighi/pycm">pycm</a> - Multi-class confusion matrix.<br />
+<a href="https://github.com/pandas-ml/pandas-ml">pandas_ml</a> - Confusion matrix.<br />
+Plotting learning curve: <a href="http://www.ritchieng.com/machinelearning-learning-curve/">link</a>.<br />
+<a href="http://www.scikit-yb.org/en/latest/api/model_selection/learning_curve.html">yellowbrick</a> - Learning curve.  </p>
+<h4 id="model-explanation-interpretability-feature-importance">Model Explanation, Interpretability, Feature Importance</h4>
+<p><a href="https://christophm.github.io/interpretable-ml-book/agnostic.html">Book</a>, <a href="https://github.com/jphall663/interpretable_machine_learning_with_python">Examples</a><br />
+<a href="https://github.com/slundberg/shap">shap</a> - Explain predictions of machine learning models, <a href="https://www.youtube.com/watch?v=C80SQe16Rao">talk</a>.<br />
+<a href="https://github.com/andosa/treeinterpreter">treeinterpreter</a> - Interpreting scikit-learn's decision tree and random forest predictions.<br />
+<a href="https://github.com/marcotcr/lime">lime</a> - Explaining the predictions of any machine learning classifier, <a href="https://www.youtube.com/watch?v=C80SQe16Rao">talk</a>, <a href="https://crazyoscarchang.github.io/2019/02/16/seven-myths-in-machine-learning-research/">Warning (Myth 7)</a>.<br />
+<a href="https://github.com/jphall663/lime_xgboost">lime_xgboost</a> - Create LIMEs for XGBoost.<br />
+<a href="https://github.com/TeamHG-Memex/eli5">eli5</a> - Inspecting machine learning classifiers and explaining their predictions.<br />
+<a href="https://github.com/aerdem4/lofo-importance">lofo-importance</a> - Leave One Feature Out Importance, <a href="https://www.youtube.com/watch?v=zqsQ2ojj7sE">talk</a>, examples: <a href="https://www.kaggle.com/divrikwicky/pf-f-lofo-importance-on-adversarial-validation">1</a>, <a href="https://www.kaggle.com/divrikwicky/lofo-importance">2</a>, <a href="https://www.kaggle.com/divrikwicky/santanderctp-lofo-feature-importance">3</a>.<br />
+<a href="https://github.com/MI2DataLab/pyBreakDown">pybreakdown</a> - Generate feature contribution plots.<br />
+<a href="https://github.com/adebayoj/fairml">FairML</a> - Model explanation, feature importance.<br />
+<a href="https://github.com/AustinRochford/PyCEbox">pycebox</a> - Individual Conditional Expectation Plot Toolbox.<br />
+<a href="https://github.com/SauceCat/PDPbox">pdpbox</a> - Partial dependence plot toolbox, <a href="https://www.kaggle.com/dansbecker/partial-plots">example</a>.<br />
+<a href="https://github.com/nyuvis/partial_dependence">partial_dependence</a> - Visualize and cluster partial dependence.<br />
+<a href="https://github.com/datascienceinc/Skater">skater</a> - Unified framework to enable model interpretation.<br />
+<a href="https://github.com/marcotcr/anchor">anchor</a> - High-Precision Model-Agnostic Explanations for classifiers.<br />
+<a href="https://github.com/Jianbo-Lab/L2X">l2x</a> - Instancewise feature selection as methodology for model interpretation.<br />
+<a href="https://github.com/MarcelRobeer/ContrastiveExplanation">contrastive_explanation</a> - Contrastive explanations.<br />
+<a href="https://github.com/ModelOriented/DrWhy">DrWhy</a> - Collection of tools for explainable AI.<br />
+<a href="https://github.com/tensorflow/lucid">lucid</a> - Neural network interpretability.<br />
+<a href="https://github.com/EthicalML/XAI">xai</a> - An eXplainability toolbox for machine learning.<br />
+<a href="https://github.com/albermax/innvestigate">innvestigate</a> - A toolbox to investigate neural network predictions.<br />
+<a href="https://github.com/pbiecek/DALEX">dalex</a> - Explanations for ML models (R package).<br />
+<a href="https://github.com/microsoft/interpret">interpret</a> - Fit interpretable models, explain models (Microsoft).<br />
+<a href="https://github.com/uber/causalml">causalml</a> - Causal inference by Uber.  </p>
+<h4 id="automated-machine-learning">Automated Machine Learning</h4>
+<p><a href="https://github.com/tensorflow/adanet">AdaNet</a> - Automated machine learning based on tensorflow.<br />
+<a href="https://github.com/EpistasisLab/tpot">tpot</a> - Automated machine learning tool, optimizes machine learning pipelines.<br />
+<a href="https://github.com/ClimbsRocks/auto_ml">auto_ml</a> - Automated machine learning for analytics &amp; production.<br />
+<a href="https://github.com/jhfjhfj1/autokeras">autokeras</a> - AutoML for deep learning.<br />
+<a href="https://github.com/Microsoft/nni">nni</a> - Toolkit for neural architecture search and hyper-parameter tuning by Microsoft.<br />
+<a href="https://github.com/minimaxir/automl-gs">automl-gs</a> - Automated machine learning.<br />
+<a href="https://github.com/mljar/mljar-supervised">mljar</a> - Automated machine learning.<br />
+<a href="https://github.com/google-research/google-research/tree/master/automl_zero">automl_zero</a> - Automatically discover computer programs that can solve machine learning tasks from Google.  </p>
+<h4 id="graph-representation-learning">Graph Representation Learning</h4>
+<p><a href="https://github.com/benedekrozemberczki/karateclub">Karate Club</a> - Unsupervised learning on graphs. <br />
+<a href="https://github.com/rusty1s/pytorch_geometric">Pytorch Geometric</a> - Graph representation learning with PyTorch. <br />
+<a href="https://github.com/dmlc/dgl">DLG</a> - Graph representation learning with TensorFlow.   </p>
+<h4 id="evolutionary-algorithms-optimization">Evolutionary Algorithms &amp; Optimization</h4>
+<p><a href="https://github.com/DEAP/deap">deap</a> - Evolutionary computation framework (Genetic Algorithm, Evolution strategies).<br />
+<a href="https://github.com/godatadriven/evol">evol</a> - DSL for composable evolutionary algorithms, <a href="https://www.youtube.com/watch?v=68ABAU_V8qI&amp;t=11m49s">talk</a>.<br />
+<a href="https://github.com/Project-Platypus/Platypus">platypus</a> - Multiobjective optimization.<br />
+<a href="https://github.com/HIPS/autograd">autograd</a> - Efficiently computes derivatives of numpy code.<br />
+<a href="https://github.com/facebookresearch/nevergrad">nevergrad</a> - Derivation-free optimization.<br />
+<a href="https://gplearn.readthedocs.io/en/stable/">gplearn</a> - Sklearn-like interface for genetic programming.<br />
+<a href="https://github.com/paulknysh/blackbox">blackbox</a> - Optimization of expensive black-box functions.<br />
+Optometrist algorithm - <a href="https://www.nature.com/articles/s41598-017-06645-7">paper</a>.<br />
+<a href="https://github.com/Pattio/DeepSwarm">DeepSwarm</a> - Neural architecture search.  </p>
+<h4 id="hyperparameter-tuning">Hyperparameter Tuning</h4>
+<p><a href="https://scikit-learn.org/stable/index.html">sklearn</a> - <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html">GridSearchCV</a>, <a href="https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html">RandomizedSearchCV</a>.<br />
+<a href="https://github.com/rsteca/sklearn-deap">sklearn-deap</a> - Hyperparameter search using genetic algorithms.<br />
+<a href="https://github.com/hyperopt/hyperopt">hyperopt</a> - Hyperparameter optimization.<br />
+<a href="https://github.com/hyperopt/hyperopt-sklearn">hyperopt-sklearn</a> - Hyperopt + sklearn.<br />
+<a href="https://github.com/pfnet/optuna">optuna</a> - Hyperparamter optimization, <a href="https://www.youtube.com/watch?v=tcrcLRopTX0">Talk</a>.<br />
+<a href="https://scikit-optimize.github.io/">skopt</a> - <code>BayesSearchCV</code> for Hyperparameter search.<br />
+<a href="https://ray.readthedocs.io/en/latest/tune.html">tune</a> - Hyperparameter search with a focus on deep learning and deep reinforcement learning.<br />
+<a href="https://github.com/aljabr0/hypergraph">hypergraph</a> - Global optimization methods and hyperparameter optimization.<br />
+<a href="https://github.com/evhub/bbopt">bbopt</a> - Black box hyperparameter optimization.<br />
+<a href="https://github.com/dragonfly/dragonfly">dragonfly</a> - Scalable Bayesian optimisation.  </p>
+<h4 id="incremental-learning-online-learning">Incremental Learning, Online Learning</h4>
+<p>sklearn - <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PassiveAggressiveClassifier.html">PassiveAggressiveClassifier</a>, <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PassiveAggressiveRegressor.html">PassiveAggressiveRegressor</a>.<br />
+<a href="https://github.com/creme-ml/creme">creme-ml</a> - Incremental learning framework, <a href="https://www.youtube.com/watch?v=P3M6dt7bY9U">talk</a>.<br />
+<a href="https://github.com/jeongyoonlee/Kaggler">Kaggler</a> - Online Learning algorithms.  </p>
+<h4 id="active-learning">Active Learning</h4>
+<p><a href="https://www.youtube.com/watch?v=0efyjq5rWS4">Talk</a><br />
+<a href="https://github.com/modAL-python/modAL">modAL</a> - Active learning framework.  </p>
+<h4 id="reinforcement-learning">Reinforcement Learning</h4>
+<p><a href="https://www.youtube.com/playlist?list=PL7-jPKtc4r78-wCZcQn5IqyuWhBZ8fOxT">YouTube</a>, <a href="https://www.youtube.com/playlist?list=PLqYmG7hTraZDNJre23vqCGIVpfZ_K2RZs">YouTube</a><br />
+Intro to Monte Carlo Tree Search (MCTS) - <a href="https://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/">1</a>, <a href="http://mcts.ai/about/index.html">2</a>, <a href="https://medium.com/@quasimik/monte-carlo-tree-search-applied-to-letterpress-34f41c86e238">3</a><br />
+AlphaZero methodology - <a href="https://github.com/AppliedDataSciencePartners/DeepReinforcementLearning">1</a>, <a href="https://web.stanford.edu/~surag/posts/alphazero.html">2</a>, <a href="https://github.com/suragnair/alpha-zero-general">3</a>, <a href="https://medium.com/applied-data-science/alphago-zero-explained-in-one-diagram-365f5abf67e0">Cheat Sheet</a><br />
+<a href="https://ray.readthedocs.io/en/latest/rllib.html">RLLib</a> - Library for reinforcement learning.<br />
+<a href="https://github.com/facebookresearch/Horizon/">Horizon</a> - Facebook RL framework.  </p>
+<h4 id="deployment-and-lifecycle-management">Deployment and Lifecycle Management</h4>
+<h5 id="dependency-management">Dependency Management</h5>
+<p><a href="https://github.com/bndr/pipreqs">pipreqs</a> - Generate a requirements.txt from import statements.<br />
+<a href="https://github.com/dephell/dephell">dephell</a> - Dependency management.<br />
+<a href="https://github.com/python-poetry/poetry">poetry</a> - Dependency management.<br />
+<a href="https://github.com/pyupio/pyup">pyup</a> - Dependency management.<br />
+<a href="https://github.com/astrofrog/pypi-timemachine">pypi-timemachine</a> - Install packages with pip as if you were in the past.  </p>
+<h5 id="data-versioning-and-pipelines">Data Versioning and Pipelines</h5>
+<p><a href="https://github.com/iterative/dvc">dvc</a> - Version control for large files.<br />
+<a href="https://github.com/tensorwerk/hangar-py">hangar</a> - Version control for tensor data.<br />
+<a href="https://github.com/quantumblacklabs/kedro">kedro</a> - Build data pipelines.  </p>
+<h5 id="data-science-related">Data Science Related</h5>
+<p><a href="https://github.com/BayesWitnesses/m2cgen">m2cgen</a> - Transpile trained ML models into other languages.<br />
+<a href="https://github.com/nok/sklearn-porter">sklearn-porter</a> - Transpile trained scikit-learn estimators to C, Java, JavaScript and others.<br />
+<a href="https://mlflow.org/">mlflow</a> - Manage the machine learning lifecycle, including experimentation, reproducibility and deployment.<br />
+<a href="https://github.com/ModelChimp/modelchimp">modelchimp</a> - Experiment Tracking.<br />
+<a href="https://github.com/EducationalTestingService/skll">skll</a> - Command-line utilities to make it easier to run machine learning experiments.<br />
+<a href="https://github.com/bentoml/BentoML">BentoML</a> - Package and deploy machine learning models for serving in production.<br />
+<a href="https://github.com/dagster-io/dagster">dagster</a> - Tool with focus on dependency graphs.<br />
+<a href="https://github.com/huggingface/knockknock">knockknock</a> - Be notified when your training ends.<br />
+<a href="https://github.com/Netflix/metaflow">metaflow</a> - Lifecycle Management Tool by Netflix.<br />
+<a href="https://github.com/cortexlabs/cortex">cortex</a> - Deploy machine learning models.  </p>
+<h4 id="math-and-background">Math and Background</h4>
+<p><a href="https://realnotcomplex.com/">All kinds of math and statistics resources</a>
+Gilbert Strang - <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/index.htm">Linear Algebra</a><br />
+Gilbert Strang - <a href="https://ocw.mit.edu/courses/mathematics/18-065-matrix-methods-in-data-analysis-signal-processing-and-machine-learning-spring-2018/">Matrix Methods in Data Analysis, Signal Processing, and Machine Learning
+</a>  </p>
+<h4 id="other">Other</h4>
+<p><a href="https://github.com/dfm/daft">daft</a> - Render probabilistic graphical models using matplotlib.<br />
+<a href="https://github.com/yt-project/unyt">unyt</a> - Working with units.<br />
+<a href="https://github.com/scrapy/scrapy">scrapy</a> - Web scraping library.<br />
+<a href="https://github.com/VowpalWabbit/vowpal_wabbit">VowpalWabbit</a> - ML Toolkit from Microsoft.<br />
+<a href="https://github.com/metric-learn/metric-learn">metric-learn</a> - Metric learning.   </p>
+<h4 id="general-python-programming">General Python Programming</h4>
+<p><a href="https://more-itertools.readthedocs.io/en/latest/">more_itertools</a> - Extension of itertools.<br />
+<a href="https://github.com/Suor/funcy">funcy</a> - Fancy and practical functional tools.<br />
+<a href="https://dateparser.readthedocs.io/en/latest/">dateparser</a> - A better date parser.<br />
+<a href="https://github.com/jamesturk/jellyfish">jellyfish</a> - Approximate string matching. <br />
+<a href="https://github.com/xolox/python-coloredlogs">coloredlogs</a> - Colored logging output.    </p>
+<h4 id="resources">Resources</h4>
+<p><a href="https://distill.pub/">Distill.pub</a> - Blog. <br />
+<a href="https://github.com/dustinvtran/ml-videos">Machine Learning Videos</a><br />
+<a href="https://github.com/donnemartin/data-science-ipython-notebooks">Data Science Notebooks</a><br />
+<a href="https://github.com/Microsoft/Recommenders">Recommender Systems (Microsoft)</a><br />
+<a href="https://github.com/hindupuravinash/the-gan-zoo">The GAN Zoo</a> - List of Generative Adversarial Networks<br />
+<a href="https://github.com/FavioVazquez/ds-cheatsheets">Datascience Cheatsheets</a>   </p>
+<h5 id="other-awesome-lists">Other Awesome Lists</h5>
+<p><a href="https://github.com/yenchenlin/awesome-adversarial-machine-learning">Awesome Adversarial Machine Learning</a>  <br />
+<a href="https://github.com/goodrahstar/my-awesome-AI-bookmarks">Awesome AI Booksmarks</a>  <br />
+<a href="https://github.com/CognonicLabs/awesome-AI-kubernetes">Awesome AI on Kubernetes</a>  <br />
+<a href="https://github.com/onurakpolat/awesome-bigdata">Awesome Big Data</a>  <br />
+<a href="https://github.com/firmai/business-machine-learning">Awesome Business Machine Learning</a>  <br />
+<a href="https://github.com/rguo12/awesome-causality-algorithms">Awesome Causality</a>  <br />
+<a href="https://github.com/benedekrozemberczki/awesome-community-detection">Awesome Community Detection</a>  <br />
+<a href="https://github.com/secretGeek/AwesomeCSV">Awesome CSV</a>  <br />
+<a href="https://github.com/arbox/data-science-with-ruby">Awesome Data Science with Ruby</a> <br />
+<a href="https://github.com/ucg8j/awesome-dash">Awesome Dash</a> <br />
+<a href="https://github.com/benedekrozemberczki/awesome-decision-tree-papers">Awesome Decision Trees</a>  <br />
+<a href="https://github.com/ChristosChristofidis/awesome-deep-learning">Awesome Deep Learning</a> <br />
+<a href="https://github.com/pawl/awesome-etl">Awesome ETL</a> <br />
+<a href="https://github.com/firmai/financial-machine-learning">Awesome Financial Machine Learning</a> <br />
+<a href="https://github.com/benedekrozemberczki/awesome-fraud-detection-papers">Awesome Fraud Detection</a> <br />
+<a href="https://github.com/nashory/gans-awesome-applications">Awesome GAN Applications</a> <br />
+<a href="https://github.com/benedekrozemberczki/awesome-graph-classification">Awesome Graph Classification</a> <br />
+<a href="https://github.com/benedekrozemberczki/awesome-gradient-boosting-papers">Awesome Gradient Boosting</a> <br />
+<a href="https://github.com/josephmisiti/awesome-machine-learning#python">Awesome Machine Learning</a>  <br />
+<a href="https://github.com/jphall663/awesome-machine-learning-interpretability">Awesome Machine Learning Interpretability</a>   <br />
+<a href="https://github.com/EthicalML/awesome-machine-learning-operations">Awesome Machine Learning Operations</a> <br />
+<a href="https://github.com/benedekrozemberczki/awesome-monte-carlo-tree-search-papers">Awesome Monte Carlo Tree Search</a> <br />
+<a href="https://github.com/MaxHalford/awesome-online-machine-learning">Awesome Online Machine Learning</a><br />
+<a href="https://github.com/vinta/awesome-python">Awesome Python</a> <br />
+<a href="https://github.com/krzjoa/awesome-python-datascience">Awesome Python Data Science</a> <br />
+<a href="https://github.com/thomasjpfan/awesome-python-data-science">Awesome Python Data Science</a><br />
+<a href="https://github.com/amitness/toolbox">Awesome Python Data Science</a><br />
+<a href="https://github.com/bharathgs/Awesome-pytorch-list">Awesome Pytorch</a><br />
+<a href="https://github.com/grahamjenson/list_of_recommender_systems">Awesome Recommender Systems</a><br />
+<a href="https://github.com/mrgloom/awesome-semantic-segmentation">Awesome Semantic Segmentation</a><br />
+<a href="https://github.com/Separius/awesome-sentence-embedding">Awesome Sentence Embedding</a><br />
+<a href="https://github.com/MaxBenChrist/awesome_time_series_in_python">Awesome Time Series</a><br />
+<a href="https://github.com/rob-med/awesome-TS-anomaly-detection">Awesome Time Series Anomaly Detection</a>    </p>
+<h4 id="things-i-google-a-lot">Things I google a lot</h4>
+<p><a href="https://pandas.pydata.org/pandas-docs/stable/timeseries.html#offset-aliases">Frequency codes for time series</a><br />
+<a href="https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior">Date parsing codes</a><br />
+<a href="https://github.com/blue-yonder/tsfresh/blob/master/tsfresh/feature_extraction/feature_calculators.py">Feature Calculators tsfresh</a>  </p>
+<h2 id="contributing">Contributing</h2>
+<p>Do you know a package that should be on this list? Did you spot a package that is no longer maintained and should be removed from this list? Then feel free to read the contribution guidelines and submit your pull request or create a new issue.  </p>
+<h2 id="license">License</h2>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img alt="CC0" src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" /></a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
