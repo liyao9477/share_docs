@@ -15,6 +15,7 @@ nav:
     - Mysql_21m: 21m_mysql.md
     - Math: math.md
     - Statistic_python: statistic_python.md
+    - DM_DA: dm_da.md
     - Sci: sci.md
     - Uti: utilities.md
     - Web: web.md
