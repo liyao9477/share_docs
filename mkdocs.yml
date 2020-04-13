@@ -16,6 +16,8 @@ nav:
     - Math: math.md
     - Statistic_python: statistic_python.md
     - DM_DA: dm_da.md
+    - DM_R: dm_r.md
+    - DM_Python: dm_python.md
     - Sci: sci.md
     - Uti: utilities.md
     - Web: web.md
