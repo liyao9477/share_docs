@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>ML_tutor - liyao碎片机</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "ML_tutor";
+    var mkdocs_page_input_path = "ml_tutor.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> liyao碎片机</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Index</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r/">R</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux/">Linux</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux_cmd/">Linux_cmd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cmd_line/">Cmd_line</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_python/">Awe_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_spider/">Awe_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data_science2/">Data_science</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../machine_learning/">ML</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">ML_tutor</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#deeplearning-algorithms-tutorial">Deeplearning Algorithms tutorial</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#_1">机器学习步骤框架</a></li>
+        
+            <li><a class="toctree-l3" href="#_2">机器学习</a></li>
+        
+            <li><a class="toctree-l3" href="#_3">深度学习</a></li>
+        
+            <li><a class="toctree-l3" href="#_4">机器学习算法概览</a></li>
+        
+            <li><a class="toctree-l3" href="#_5">算法模型</a></li>
+        
+            <li><a class="toctree-l3" href="#_6">机器学习的基础</a></li>
+        
+            <li><a class="toctree-l3" href="#_7">参考书籍</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#_8">机器学习</a></li>
+    
+
+    <li class="toctree-l2"><a href="#license">License</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysql_chefs/">Mysql_chefs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../21m_mysql/">Mysql_21m</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../math/">Math</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../statistic_python/">Statistic_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sci/">Sci</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../utilities/">Uti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../web/">Web</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ajenti/">ajenti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../macos_app/">Macos_app</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r4ds/">r4ds</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python_spider/">Python_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../p_books/">P_books</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">liyao碎片机</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>ML_tutor</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h3 id="deeplearning-algorithms-tutorial">Deeplearning Algorithms tutorial</h3>
+<p><p align='left'>
+<img src="https://img.shields.io/badge/build-passing-brightgreen.svg">
+<a href="https://twitter.com/perfactsen"><img src="https://img.shields.io/badge/twitter-keke-green.svg?style=flat&colorA=009df2"></a>
+<a href="https://www.zhihu.com/people/sencoed.com/activities"><img src="https://img.shields.io/badge/%E7%9F%A5%E4%B9%8E-keke-green.svg?style=flat&colorA=009df2"></a>
+</p></p>
+<p>最近以来一直在学习机器学习和算法，然后自己就在不断总结和写笔记，记录下自己的学习AI与算法历程。
+机器学习(Machine Learning, ML)是一门多领域交叉学科，涉及概率论、统计学、逼近论、凸分析、算法复杂度理论等多门学科。专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。</p>
+<p align="center">
+<img width="100%" align="center" src="assets/images/global.png" />
+</p>
+
+<ul>
+<li>机器学习是计算机科学的一个子领域，在人工智能领域，机器学习逐渐发展成模式识别和计算科学理论的研究。</li>
+<li>机器学习：多领域交叉学科，涉及概率论统计学，逼近论，凸分析，算法复杂度理论等多门学科。</li>
+<li>机器学习的应用：语音识别，自动驾驶，语言翻译，计算机视觉，推荐系统，无人机，识别垃圾邮件，人脸识别，电商推荐系统。</li>
+<li>机器学习的基本概念：训练集，测试集，特征值，监督学习，非监督学习，分类，回归 </li>
+</ul>
+<p>目前国内在AI感知层面应用已经百花齐放，主要是无人驾驶、智能音箱、嵌入式。但在认知层面还是比较缺乏，所以新入行的AI应用团队可以放在认知层。如开头所述，认知层最重要的是算法，因此需要阅读Nature上最领先的算法公司DeepMind的几篇大作，如下：</p>
+<ul>
+<li>2016.01.Mastering the game of Go with deep neural networks and tree search</li>
+<li>2016.10.Hybrid computing using a neural network with dynamic external memory</li>
+<li>2017.10.Mastering the game of Go without human knowledge</li>
+</ul>
+<h4 id="_1">机器学习步骤框架</h4>
+<ul>
+<li>把数据拆分为训练集合测试集</li>
+<li>用训练集合训练集的特征向量来训练算法</li>
+<li>用学习来的算法运用在测试集上累评估算法(可能要设计到调整参数(parameter tuning) 用来验证集(validation set))</li>
+</ul>
+<h4 id="_2">机器学习</h4>
+<ul>
+<li>机器学习：机器学习是计算机科学的一个子领域，在人工智能领域，机器学习逐渐发展成模式识别和计算科学理论的研究。通俗的讲机器学习是一种能够赋予机器学习的能力，可以让它完成直接编程无法完成的功能的方法。但从实践的意义上来说，机器学习是一种通过利用数据，训练出模型，然后使用模型预测的一种方法。</li>
+<li>
+<p>机器学习的应用：机器学习已广泛应用于数据挖掘、计算机视觉、自然语言处理、生物特征识别、搜索引擎、医学诊断、检测信用卡欺诈、证券市场分析、DNA序列测序、语音和手写识别、战略游戏和机器人等领域。下面开启我们的机器学习！</p>
+</li>
+<li>
+<p><a href="https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Machine%20Learning/ML.01.md">机器学习环境的搭建</a></p>
+</li>
+<li><a href="https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Machine%20Learning/ML.02.md">机器学习的入门</a></li>
+<li><a href="https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Machine%20Learning/ML.03.md">机器学习的框架</a></li>
+<li><a href="">机器学习的应用案例</a></li>
+</ul>
+<h4 id="_3">深度学习</h4>
+<ul>
+<li>深度学习：深度学习是基于机器学习延伸出来的一个新的领域，由以人大脑结构为启发的神经网络算法为起源加之模型结构深度的增加发展，并伴随大数据和计算能力的提高而产生的一系列新的算法。</li>
+<li>
+<p>深度学习的方向：被应用在图像处理与计算机视觉，自然语言处理以及语音识别等领域。 </p>
+</li>
+<li>
+<p><a href="https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Neural%20Network/NNK.01.md">深度神经网络</a></p>
+</li>
+<li><a href="https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Neural%20Network/NNK.02.md">深度学习的入门</a></li>
+<li><a href="https://github.com/AI-algorithms/Algorithms-Tutorial/blob/master/src/Neural%20Network/NNK.03.md">深度学习环境的搭建</a></li>
+<li><a href="">深度学习的应用案例</a></li>
+</ul>
+<h4 id="_4">机器学习算法概览</h4>
+<p><p align="center">
+<img width="100%" align="center" src="assets/images/overview.png" />
+</p></p>
+<p>从2016年起，机器学习有了新的突破和发展。但是，有效的机器学习是困难的，因为机器学习本身就是一个交叉学科，没有科学的方法及一定的积累很难入门。
+从2017年10月19日，Nature上发表了新一代AlphaGo版本AlphaGo Zero的技术论文。指出一种仅基于强化学习的算法，AlphaGo Zero不使用人类的数据、指导或规则以外的领域知识成了自己的老师。DeepMind代表了目前人工智能领域最强的技术，其核心是两个字：算法。
+很多人都想成为一个AI开发者，不仅是因为AI开发的薪资高，更主要是因为AI这几年的快速发展,但是因为AI本身的门槛就比较高,很多人可能就会比较徘徊，因而想把自己学习AI的过程写成本书,供大家参考和学习！</p>
+<ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BP/BP.md">BP神经网络</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RBF/RBF.md">RBF算法</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/SOM/SOM.md">SOM神经网络</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ART/ART.md">ART神经网络</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.md">贝叶斯网络</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RST/RST.md">粗糙集</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/OTR/OTR.md">孤立点分析</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CART/CART.md">CART</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/EM/EM.md">EM</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/FP/FP.md">FP—tree</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/GSP/GSP.md">GSP序列</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CF/CF.md">协同过滤</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BIR/BIR.md">BIRCH</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/PN/PN.md">Prefixspan</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/PRK/PRK.md">PageRank</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ABT/ABT.md">AdaBoost</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CBA/CBA.md">CBA</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KNN/KNN.md">KNN</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/HPD/HPD.md">Hopfield神经网络</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.md">决策树</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CAS/CAS.md">聚类分析</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARS/ARS.md">关联规则</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/SVM/SVM.md">支持向量机（SVM）</a></li>
+</ul>
+<p>后面的算法和我们的算法模型，我会持续更新整理，后续的算法章节会不断的补上，希望可以对新入门学习AI开发和算法的开发者有所帮助！</p>
+<h4 id="_5">算法模型</h4>
+<ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.1.md">回归算法</a><ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.2.md">线性回归</a>  </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.3.md">逻辑回归</a>  </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.4.md">多元自适应回归(MARS)</a>  </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RAM/RAM.0.5.md">本地散点平滑估计(LOESS)</a>  </li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.1.md">基于实例的学习算法</a> <ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.2.md">K-近邻算法（KNN）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.3.md">学习矢量化（LVQ）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.4.md">自组织映射算法（SOM）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BA/BA.0.5.md">局部加权学习算法（LWR）</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.1.md">正则化算法</a>    <ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.2.md">岭回归（Ridge Regression）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.3.md">LASSO（Least Absolute Shrinkage and Selection Operator）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.4.md">弹性网络(Elastic Net)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/RGN/RGN.0.5.md">最小角回归(LARS)</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.1.md">决策树算法</a><ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.2.md">分类和回归树（CART）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.3.md">ID3算法(Iterative Dichotomiser 3)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.4.md">CHAID（Chi-squared Automatic Interaction Detection)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.5.md">随机森林（Random Forest）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.6.md">多元自适应回归样条（MARS）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DT/DT.0.7.md">梯度推进机（Gradient Boosting Machine,GBM）</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.1.md">贝叶斯算法</a><ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.2.md">朴素贝叶斯(Naive Bayes)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.3.md">高斯朴素贝叶斯(Gaussian Naive Bayes)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.4.md">多项式朴素贝叶斯(Multinomial Naive Bayes)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.5.md">平均单依赖估计量（Averaged One-Dependence Estimators）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/BNS/BNS.0.6.md">贝叶斯网络（Bayesian Belief Network）</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KBO/KBO.0.1.md">基于核的算法</a>   <ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KBO/KBO.0.2.md">支持向量机（SVM）</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KBO/KBO.0.3.md">径向基函数（Radial Basis Function ，RBF)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/KBO/KBO.0.4.md">线性判别分析（Linear Discriminate Analysis ，LDA)</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.1.md">聚类算法(Cluster analysis)</a><ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.2.md">K-均值(K-Means Algorithm)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.3.md">模糊c-均值聚类算法(Fuzzy C-means Algorithm)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.4.md">期望最大化(Expectation-Maximization)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/CA/CA.0.5.md">聚类分析(Cluster Analysis)</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.1.md">关联规则学习(Association Rule Learning)</a>   <ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.2.md">先验算法(Apriori Algorithm)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.3.md">Eclat算法(Eclat Algorithm)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ARL/ARL.0.4.md">FP-growth算法(FP-Growth Algorithm)</a> </li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.1.md">人工神经网络(Artificial Neural Network)</a>      <ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.2.md">自动编码器(Autoencoder)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.3.md">反向传播(Backpropagation)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.4.md">递归神经网络(Recurrent Neural Network)</a>) </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.5.md">多层感知器(Multilayer Perceptron)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.6.md">玻尔兹曼机(Boltzmann Machine)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.7.md">卷积神经网络(Convolutional Neural Network)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.8.md">Hopfield网络(Hopfield Network)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.9.md">径向基函数网络(Radial Basis Function Network)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.10.md">受限玻尔兹曼机(Restricted Boltzmann Machine)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.11.md">自组织映射(Self-Organizing Map)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/ANN/ANN.0.12.md">脉冲神经网络(Spiking Neural Network)</a> </li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.1.md">深度学习(Deep Learning)</a> <ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.2.md">深度信念网络(Deep Belief Machines)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.3.md">深度卷积神经网络(Deep Convolutional Neural Networks)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.4.md">深度递归神经网络(Deep Recurrent Neural Networks)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.5.md">分层时间记忆(Hierarchical Temporal Memory)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.6.md">堆叠自动编码器(Stacked AutoEncoder)</a> </li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DL/DL.0.7.md">生成式对抗网络(Generative Adversarial Networks)</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.1.md">降维算法(Dimensionality Reduction Algorithm)</a><ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.2.md">主成分分析法(Principal Component Analysis)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.3.md">多维缩放(Mutiple Dimensional Scaling)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.4.md">线性判别分析(Linear Discriminant Analysis)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.5.md">等度量映射(IsometricMapping,Isomap)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.6.md">局部线性嵌入(Locally Linear Embedding)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.7.md">拉普拉斯特征映射(Laplacian Eigenmaps)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.8.md">t－分布随机近邻嵌入(t-SNE)</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/DRA/DRA.0.9.md">深度自动编码器(Deep Autoencoder Networks)</a></li>
+</ul>
+</li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/EL/EL.0.1.md">集成算法(Ensemble Learning)</a><ul>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/EL/EL.0.2.md">Boosting</a></li>
+<li><a href="https://github.com/KeKe-Li/tutorial/blob/master/assets/src/EL/EL.0.3.md">Bagging</a></li>
+<li><a href="">AdaBoost</a></li>
+<li><a href="">堆叠泛化（混合）</a></li>
+<li><a href="">GBM 算法</a></li>
+<li><a href="">GBRT 算法</a></li>
+<li><a href="">随机森林</a></li>
+</ul>
+</li>
+<li><a href="">其他算法</a><ul>
+<li><a href="">特征选择算法</a></li>
+<li><a href="">性能评估算法</a></li>
+<li><a href="">自然语言处理</a></li>
+<li><a href="">计算机视觉</a></li>
+<li><a href="">推荐系统</a></li>
+<li><a href="">强化学习</a></li>
+<li><a href="">迁移学习</a></li>
+</ul>
+</li>
+</ul>
+<p>算法模型的整体基本就是这样目录，后续的算法模型我会不断完善和补充，更新！</p>
+<h4 id="_6">机器学习的基础</h4>
+<ul>
+<li>机器学习需要的理论基础：数学，线性代数，数理统计，概率论，高等数学、凸优化理论，形式逻辑等</li>
+</ul>
+<h4 id="_7">参考书籍</h4>
+<ul>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E5%90%8C%E6%B5%8E%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0%E6%95%99%E6%9D%90.pdf">同济线性代数教材</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E5%90%8C%E6%B5%8E%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E7%AC%AC%E5%85%AD%E7%89%88%E4%B8%8A%E4%B8%8B%E5%86%8C.pdf">同济高等数学第六版上下册</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1%E5%90%8C%E6%B5%8E%E5%A4%A7%E5%AD%A6.pdf">概率论与数理统计同济大学</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E5%87%B8%E4%BC%98%E5%8C%96%E7%90%86%E8%AE%BA.pdf">凸优化理论</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.pdf">机器学习-周志华</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E9%9D%A2%E5%90%91%E6%9C%BA%E5%99%A8%E6%99%BA%E8%83%BD%E7%9A%84TensorFlow%E5%AE%9E%E8%B7%B5%20(%E6%99%BA%E8%83%BD%E7%B3%BB%E7%BB%9F%E4%B8%8E%E6%8A%80%E6%9C%AF%E4%B8%9B%E4%B9%A6)_.pdf">面向机器智能的TensorFlow实践</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0.pdf">机器学习</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E6%95%B0%E5%AD%A6%E4%B9%8B%E7%BE%8E.pdf">数学之美</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0Deep%20Learning.pdf">深度学习</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0.pdf">神经网络和深度学习</a></li>
+<li><a href="https://github.com/KeKe-Li/book/blob/master/AI/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D.pdf">梯度下降</a></li>
+<li><a href="https://blog.openai.com/unsupervised-sentiment-neuron/">无监督神经元</a></li>
+<li><a href="https://tensorflow.feisky.xyz/install/cpu.html">Tensorflow实践</a></li>
+<li><a href="https://github.com/owainlewis/awesome-artificial-intelligence">Artificial Intelligence</a></li>
+<li><a href="http://www.tensorfly.cn/tfdoc/tutorials/mnist_beginners.html">Tensorflow新手入门</a></li>
+</ul>
+<h3 id="_8">机器学习</h3>
+<p>觉得此文章不错，支持我的话可以给我star ，:star:！如果有问题可以加我的微信<strong>Sen0676</strong>,加入我们的交流群一起交流机器学习！</p>
+<h3 id="license">License</h3>
+<p>This is free software distributed under the terms of the MIT license</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mysql_chefs/" class="btn btn-neutral float-right" title="Mysql_chefs">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../machine_learning/" class="btn btn-neutral" title="ML"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../machine_learning/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../mysql_chefs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

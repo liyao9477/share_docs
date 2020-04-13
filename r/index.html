@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>R - liyao碎片机</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "R";
+    var mkdocs_page_input_path = "r.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> liyao碎片机</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Index</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../git/">Git</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">R</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#r">R</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#base">Base</a></li>
+        
+            <li><a class="toctree-l3" href="#tutorial">Tutorial</a></li>
+        
+            <li><a class="toctree-l3" href="#packages">Packages</a></li>
+        
+            <li><a class="toctree-l3" href="#text">Text</a></li>
+        
+            <li><a class="toctree-l3" href="#performance">Performance</a></li>
+        
+            <li><a class="toctree-l3" href="#data-wrangling">Data wrangling</a></li>
+        
+            <li><a class="toctree-l3" href="#cli">CLI</a></li>
+        
+            <li><a class="toctree-l3" href="#ml">ML</a></li>
+        
+            <li><a class="toctree-l3" href="#visualization">Visualization</a></li>
+        
+            <li><a class="toctree-l3" href="#color">Color</a></li>
+        
+            <li><a class="toctree-l3" href="#heatmap">Heatmap</a></li>
+        
+            <li><a class="toctree-l3" href="#ggplot2">ggplot2</a></li>
+        
+            <li><a class="toctree-l3" href="#statistics">Statistics</a></li>
+        
+            <li><a class="toctree-l3" href="#cluster">Cluster</a></li>
+        
+            <li><a class="toctree-l3" href="#file-formats">File formats</a></li>
+        
+            <li><a class="toctree-l3" href="#misc">Misc</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux/">Linux</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../linux_cmd/">Linux_cmd</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../cmd_line/">Cmd_line</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_python/">Awe_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../awe_spider/">Awe_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../data_science2/">Data_science</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../machine_learning/">ML</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ml_tutor/">ML_tutor</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../mysql_chefs/">Mysql_chefs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../21m_mysql/">Mysql_21m</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../math/">Math</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../statistic_python/">Statistic_python</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sci/">Sci</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../utilities/">Uti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../web/">Web</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../ajenti/">ajenti</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../macos_app/">Macos_app</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../r4ds/">r4ds</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../python_spider/">Python_spider</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../p_books/">P_books</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">liyao碎片机</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>R</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="r">R</h1>
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+<p><strong>Table of Contents</strong></p>
+<ul>
+<li><a href="#base">Base</a></li>
+<li><a href="#tutorial">Tutorial </a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#text">Text</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#data%C2%A0wrangling">Data wrangling</a></li>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#ml">ML</a></li>
+<li><a href="#visualization">Visualization</a></li>
+<li><a href="#color">Color</a></li>
+<li><a href="#heatmap">Heatmap</a></li>
+<li><a href="#ggplot2">ggplot2</a></li>
+<li><a href="#statistics">Statistics</a></li>
+<li><a href="#cluster">Cluster</a></li>
+<li><a href="#file-formats">File formats</a></li>
+<li><a href="#misc">Misc</a></li>
+</ul>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+<h2 id="base">Base</h2>
+<p>update all R packages</p>
+<pre><code>install.packages("rvcheck")
+update_all()
+</code></pre>
+<h2 id="tutorial">Tutorial</h2>
+<ul>
+<li><a href="https://github.com/hadley/r4ds">R for data science</a></li>
+<li><a href="https://www.rstudio.com/resources/cheatsheets/"><strong>Cheatsheets by rstudio</strong></a> https://github.com/rstudio/cheatsheets</li>
+<li><a href="http://onepager.togaware.com/">Hands-On Data Science with R</a></li>
+<li><a href="https://datapyr.zeef.com/kranthi.kumar">DataPyR</a></li>
+<li><a href="http://www.sthda.com/english/">http://www.sthda.com/english/</a></li>
+<li><a href="http://www.r-bloggers.com/search/ggplot2">http://www.r-bloggers.com/search/ggplot2</a></li>
+<li><a href="https://bookdown.org/rdpeng/RProgDA/"><strong>Mastering Software Development in R</strong></a></li>
+</ul>
+<h2 id="packages">Packages</h2>
+<ul>
+<li><a href="http://blog.yhathq.com/posts/10-R-packages-I-wish-I-knew-about-earlier.html">10 R packages I wish I knew about earlier</a></li>
+<li><a href="http://www.computerworld.com/article/2921176/business-intelligence/great-r-packages-for-data-import-wrangling-visualization.html">Great R packages for data import, wrangling &amp; visualization</a></li>
+<li><a href="https://github.com/jtleek/rpackages">R package development - the Leek group way! </a></li>
+</ul>
+<h2 id="text">Text</h2>
+<ul>
+<li><a href="https://github.com/tidyverse/stringr">stringr</a> - A fresh approach to string manipulation in R http://stringr.tidyverse.org</li>
+<li><a href="http://www.mjdenny.com/Text_Processing_In_R.html">Text Processing in R</a></li>
+<li><a href="https://github.com/nicolewhite/pystr">pystr</a> - Python String Methods in R. <a href="http://cran.r-project.org/web/packages/pystr">http://cran.r-project.org/web/packages/pystr</a></li>
+<li><a href="http://r.rzaixian.com/%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/how-to-deal-with-string-huyuan.html">R语言基础知识-字符串的处理</a></li>
+</ul>
+<h2 id="performance">Performance</h2>
+<p>docs</p>
+<ul>
+<li><a href="http://rstatistics.net/strategies-to-speed-up-r-code/">http://rstatistics.net/strategies-to-speed-up-r-code/</a></li>
+</ul>
+<p>packages</p>
+<h2 id="data-wrangling">Data wrangling</h2>
+<p>data structure</p>
+<ul>
+<li><a href="http://tibble.tidyverse.org/">tibble</a> - A tibble, or tbl_df, is a modern reimagining of the data.frame, keeping what time has proven to be effective, and throwing out what is not.</li>
+</ul>
+<p>tools</p>
+<ul>
+<li><a href="http://www.analyticsvidhya.com/blog/2015/12/faster-data-manipulation-7-packages/">faster-data-manipulation-7-packages</a></li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">data-wrangling-cheatsheet.pdf</a></li>
+<li><a href="https://github.com/hadley/tidyr">tidyr</a> tidyr is a reframing of reshape2 designed to accompany the tidy data framework, and to work hand-in-hand with magrittr and dplyr to build a solid pipeline for data analysis.</li>
+<li><a href="http://www.slideshare.net/Sheffield_R_/dplyr-and-plyr">dplyr-and-plyr</a>, <a href="http://educate-r.org//2014/01/24/usePlyr/">When I use plyr/dplyr</a>，[Using dplyr, and a comparison with plyr.]http://scicomp2014.edc.uri.edu/posts/2014-04-14-Smith.html</li>
+<li><a href="http://www.sharpsightlabs.com/dplyr-intro-data-manipulation-with-r/">dplyr: How to do data manipulation with R</a><ul>
+<li><a href="https://suzan.rbind.io/2018/01/dplyr-tutorial-1/">Data Wrangling Part 1: Basic to Advanced Ways to Select Columns</a></li>
+<li><a href="https://suzan.rbind.io/2018/02/dplyr-tutorial-2/">Data Wrangling Part 2: Transforming your columns into the right shape</a></li>
+</ul>
+</li>
+<li><a href="http://dplyr.tidyverse.org/articles/programming.html">Programming with dplyr</a> </li>
+<li><a href="http://www.r-bloggers.com/normalising-data-within-groups/">normalising-data-within-groups</a>, <a href="https://dl.dropboxusercontent.com/u/67041874/normalise.R">script</a></li>
+<li><a href="https://github.com/tidyverse/broom"><strong>broom</strong></a> - Convert Statistical Analysis Objects into Tidy Data Frames</li>
+<li><a href="https://github.com/dgrtwo/widyr">widyr</a> - Widen, process, and re-tidy a dataset</li>
+</ul>
+<h2 id="cli">CLI</h2>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/argparse/">argparse</a></li>
+</ul>
+<h2 id="ml">ML</h2>
+<p>docs</p>
+<ul>
+<li><a href="https://github.com/ledell/useR-machine-learning-tutorial/blob/master/random-forest.Rmd">useR-machine-learning-tutorial</a></li>
+</ul>
+<p>packages</p>
+<ul>
+<li><a href="https://github.com/topepo/caret/">caret</a> - (Classification And Regression Training) R package that contains misc functions for training and plotting classification and regression models</li>
+<li><a href="https://rocr.bioinf.mpi-sb.mpg.de/">ROCR</a> - visualizing classifier performance in R, with only 3 commands</li>
+<li><a href="https://github.com/dmlc/xgboost">xgboost</a> - Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library, for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Flink and DataFlow<ul>
+<li><a href="https://www.analyticsvidhya.com/blog/2016/01/xgboost-algorithm-easy-steps/">How to use XGBoost algorithm in R in easy steps</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="visualization">Visualization</h2>
+<ul>
+<li>Large number of images: <a href="http://rgm3.lab.nig.ac.jp/RGM/R_image_list">http://rgm3.lab.nig.ac.jp/RGM/R_image_list</a></li>
+<li><a href="http://kateto.net/network-visualization">Static and dynamic network visualization with R</a></li>
+<li><a href="http://rcharts.io/gallery/">http://rcharts.io/gallery/</a></li>
+<li><a href="https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html">corrplot</a></li>
+<li>ordination plots</li>
+<li><a href="http://igraph.org/r/">igraph</a>, <a href="http://kateto.net/networks-r-igraph"><strong>Network Analysis and Visualization with R and igraph</strong></a></li>
+<li>Dendrogram: hclust</li>
+<li><a href="https://github.com/kassambara/factoextra">factoextra</a> -  Visualization of the outputs of a multivariate analysis <a href="http://www.sthda.com/">http://www.sthda.com</a></li>
+<li>Sankey from Scratch using rCharts, d3.js, and igraph</li>
+<li><a href="https://github.com/elbamos/largevis">largevis</a> - This is an implementation of the largeVis algorithm described in (https://arxiv.org/abs/1602.00370). It also incorporates code for a very fast algorithm for estimating k-nearest neighbors.</li>
+<li><a href="https://github.com/js229/Vennerable">Vennerable</a> - Vennerable provides Venn diagrams in R. It displays Venn and Euler diagrams for up to 9 different sets and using a variety of geometries. It allows the display of area-weighted Venn diagrams and allows fine graphical control over the result.</li>
+<li><a href="https://github.com/mbojan/alluvial">alluvial</a> - Alluvial diagrams (you can also use <a href="https://github.com/corybrunson/ggalluvial">ggalluvial</a></li>
+<li><a href="https://github.com/hms-dbmi/UpSetR">UpSetR</a> - An R implementation of the UpSet set visualization technique published by Lex, Gehlenborg, et al..</li>
+</ul>
+<p>book</p>
+<ul>
+<li><a href="http://serialmentor.com/dataviz/">Fundamentals of Data Visualization</a></li>
+</ul>
+<p>misc</p>
+<ul>
+<li><a href="http://vis.supstat.com/2013/04/mathematical-annotation-in-r/">Mathematical Annotation in R</a></li>
+</ul>
+<p>circos like</p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/RCircos/index.html">rCircos</a>: R package for circular plots. [last update: 2013]</li>
+<li><a href="http://www.bioconductor.org/packages/release/bioc/html/OmicCircos.html"><strong>OmicCircos</strong></a>: R package for circular plots for omics data. <a href="http://www.bioconductor.org/packages/release/bioc/vignettes/OmicCircos/inst/doc/OmicCircos_vignette.pdf">vignette</a> [last update: 2016-05]</li>
+<li><a href="https://github.com/jokergoo/circlize"><strong>circlize</strong></a> - circular layout in R http://jokergoo.github.io/circlize</li>
+</ul>
+<p>Shiny</p>
+<ul>
+<li><a href="https://www.codementor.io/r/tutorial/building-a-web-based-sentiment-classifier-using-r-shiny">Building Web Data Products with R &amp; Shiny</a></li>
+</ul>
+<h2 id="color">Color</h2>
+<ul>
+<li><a href="https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/colorPaletteCheatsheet.pdf">R color cheatsheet</a></li>
+<li><a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;ved=0CB8QFjAAahUKEwic7ene6uTGAhXPMIgKHbSBAvs&amp;url=http%3A%2F%2Fcran.r-project.org%2Fpackage%3DRColorBrewer&amp;ei=DVuqVdyyHc_hoAS0g4rYDw&amp;usg=AFQjCNHdzsnSUdQ4Uj7y4721JA426mW_dA&amp;sig2=p6oVhW7jglAJcQRPNQI_HA">RColorBrewer</a></li>
+</ul>
+<h2 id="heatmap">Heatmap</h2>
+<ul>
+<li>ComplexHeatmap</li>
+<li><a href="http://www.inside-r.org/packages/cran/pheatmap/docs/pheatmap">pheatmap</a></li>
+</ul>
+<h2 id="ggplot2">ggplot2</h2>
+<p>Extended packages. More: <a href="https://github.com/rstudio/RStartHere#visualize">RStartHere</a>,
+<a href="https://github.com/ggobi/ggally">ggally</a></p>
+<p><a href="http://www.ggplot2-exts.org/gallery/">ggplot2 extensions - gallery</a></p>
+<ul>
+<li><a href="https://cran.r-project.org/web/packages/ggthemes/vignettes/ggthemes.html"><strong><em>ggthemes</em></strong></a> - Some extra themes, geoms, and scales for  ggplot2.</li>
+<li><a href="https://github.com/hrbrmstr/hrbrthemes">hrbrthemes</a> - Opinionated, typographic-centric ggplot2 themes and theme components</li>
+<li><a href="https://cran.r-project.org/web/packages/ggsci/vignettes/ggsci.html"><strong>ggsci</strong></a> - Scientific Journal and Sci-Fi Themed Color Palettes for ggplot2</li>
+<li><a href="https://github.com/wilkelab/cowplot"><strong><em>cowplot</em></strong></a>  - provide a publication-ready theme for ggplot2. similar package: <a href="https://ggobi.github.io/ggally/gh-pages/ggmatrix.html">ggmatrix</a>, <a href="https://ggobi.github.io/ggally/gh-pages/ggpairs.html">ggpairs</a>, <a href="https://ggobi.github.io/ggally/gh-pages/ggscatmat.html">ggscatmat</a></li>
+<li><a href="https://github.com/sinhrks/ggfortify"><strong><em>ggfortify</em></strong></a> - Define fortify and autoplot functions to allow ggplot2 to handle some popular R packages.  <a href="http://cos.name/2015/11/ggfortify-visualization-in-one-line-of-code/">http://cos.name/2015/11/ggfortify-visualization-in-one-line-of-code/</a></li>
+<li><a href="https://github.com/slowkow/ggrepel"><strong><em>ggrepel</em></strong></a> - Repel overlapping text labels away from each other.</li>
+<li><a href="https://github.com/hrbrmstr/ggalt">ggalt</a> - Extra Coordinate Systems, Geoms and Statistical Transformations for 'ggplot2' https://cran.rstudio.com/web/packages/ggalt/ggalt.pdf</li>
+<li><a href="https://github.com/thomasp85/ggforce"><strong><em>ggforce</em></strong></a> - aime primarily at ad hoc data visualization in order to investigate the data at hand, and less at utilities for composing custom plots a la D3.js.</li>
+<li><a href="https://cran.r-project.org/web/packages/sinaplot/vignettes/SinaPlot.html">sina plot</a>: <code>geom_sina</code>:  enhanced jitter strip char</li>
+<li><a href="https://github.com/dgrtwo/gganimate"><strong><em>gganimate</em></strong></a> - Create easy animations with ggplot2</li>
+<li><a href="https://github.com/fawda123/ggord">ggord</a> - a take on ordination plots using ggplot2</li>
+<li><a href="https://github.com/vqv/ggbiplot">gbiplot</a> - A biplot based on ggplot2</li>
+<li><a href="https://github.com/briatte/ggnet"><strong><em>ggnet</em></strong></a> - Simple network plots with ggplot2 in R. Similar packages: <a href="https://ggobi.github.io/ggally/gh-pages/ggnetworkmap.html">ggnetworkmap</a>, <a href="https://github.com/thomasp85/ggraph">ggraph</a> - Grammar of Graph Graphics</li>
+<li><a href="http://ggvis.rstudio.com/">ggvis</a>- Interactive grammar of graphics for R</li>
+<li><a href="https://briatte.github.io/ggcorr/"><strong><em>ggcorr</em></strong></a>: correlation matrixes with ggplot2</li>
+<li><a href="http://guangchuangyu.github.io/ggtree"><strong><em>ggtree</em></strong></a>: an R package for visualization and annotation of phylogenetic trees with their covariates and other associated data.</li>
+<li><a href="https://ggobi.github.io/ggally/#ggallyggsurv"><strong><em>ggsurv</em></strong></a> - survival curves with ggplot2</li>
+<li><a href="https://github.com/daattali/ggExtra">ggExtra</a> Add marginal histograms to ggplot2, and more ggplot2 enhancements http://daattali.com/shiny/ggExtra-ggMarginal-demo/</li>
+<li><a href="https://github.com/ricardo-bion/ggradar">ggradar</a> - radar charts with ggplot2</li>
+<li><a href="https://cran.r-project.org/web/packages/ggRandomForests/">ggRandomForests</a> : Visually Exploring Random Forests</li>
+<li><a href="https://cran.r-project.org/web/packages/ggmcmc/index.html">ggmcmc</a>: Tools for Analyzing MCMC Simulations from Bayesian Inference</li>
+<li><a href="https://github.com/corybrunson/ggalluvial"><strong><em>ggalluvial</em></strong></a> - alluvial diagrams in ggplot2</li>
+<li><a href="https://github.com/kassambara/ggpubr">ggpubr</a> - 'ggplot2' Based Publication Ready Plots</li>
+<li><a href="https://github.com/wilkox/gggenes">gggenes</a> - Draw gene arrow maps in ggplot2</li>
+<li><a href="https://github.com/wilkox/ggfittext">ggfittext</a> - ggplot2 geoms to fit text into boxes</li>
+<li><a href="https://github.com/eclarke/ggbeeswarm"><strong>ggbeeswarm</strong></a> - Provides methods for beeswarm plots in ggplot2</li>
+<li><a href="https://github.com/yutannihilation/gghighlight/">gghighlight</a> - Highlight points and lines in ggplot2</li>
+<li><a href="https://github.com/hrbrmstr/waffle"><strong>waffle</strong></a> - Make waffle (square pie) charts in R
+  <a href="https://nsaunders.wordpress.com/2017/09/08/infographic-style-charts-using-the-r-waffle-package/">introduction</a></li>
+<li><a href="https://github.com/clauswilke/ggridges">ggridges</a> - Geoms to make ridgeline plots with ggplot2</li>
+<li>[https://github.com/wilkox/ggwrap] - ‘ggwrap’ wraps a ‘ggplot2’ plot over multiple rows, to make plots with long x axes easier to read.</li>
+</ul>
+<p>Tutorial</p>
+<ul>
+<li><a href="http://ygc.name/2014/05/11/use-ggplot2/">使用ggplot2画图</a> - YGC</li>
+<li><a href="https://www.rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf">ggplot2-cheatsheet</a></li>
+<li><a href="http://rpubs.com/hadley/ggplot-intro">Getting started with ggplot2</a></li>
+<li><a href="http://zevross.com/blog/2014/08/04/beautiful-plotting-in-r-a-ggplot2-cheatsheet-3/">Beautiful plotting in R: A ggplot2 cheatsheet</a></li>
+<li><a href="https://biomickwatson.wordpress.com/2015/04/09/recreating-a-famous-visualisation/">Recreating a famous visualisation</a></li>
+<li><a href="http://stackoverflow.com/questions/14379737/how-can-i-make-xlab-and-ylab-visible-when-using-theme-wsj-ggthemes"> http://stackoverflow.com/questions/14379737/how-can-i-make-xlab-and-ylab-visible-when-using-theme-wsj-ggthemes</a></li>
+<li><a href="http://www.noamross.net/blog/2013/11/20/formatting-plots-for-pubs.html">How to format plots for publication using ggplot2 (with some help from Inkscape)</a></li>
+<li><a href="http://felixfan.github.io/rstudy/2013/11/27/ggplot2-remove-grid-background-margin/">Remove grid and background from plot (ggplot2)</a></li>
+<li><a href="http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/">Colors</a></li>
+<li><a href="http://www.sthda.com/english/wiki/ggplot2-easy-way-to-mix-multiple-graphs-on-the-same-page-r-software-and-data-visualization">ggplot2 - Easy way to mix multiple graphs on the same page</a></li>
+<li><a href="http://blog.mckuhn.de/2013/04/2d-plot-with-histograms-for-each.html">2D plot with histograms for each dimension</a></li>
+<li><a href="http://www.exegetic.biz/blog/2015/05/r-recipe-aligning-axes-in-ggplot2/">R Recipe: Aligning Axes in ggplot2</a></li>
+<li><a href="http://rud.is/b/2016/02/14/making-faceted-heatmaps-with-ggplot2/">making-faceted-heatmaps-with-ggplot2/</a></li>
+<li><a href="http://www.cnblogs.com/weibaar/p/4567791.html">R语言：ggplot2精细化绘图——以实用商业化图表绘图为例</a></li>
+</ul>
+<h2 id="statistics">Statistics</h2>
+<p>book</p>
+<ul>
+<li><a href="http://rcompanion.org/handbook/">Summary and Analysis of Extension Program Evaluation in R</a></li>
+</ul>
+<p>misc</p>
+<ul>
+<li><a href="http://www.sthda.com/english/wiki/factoextra-r-package-quick-multivariate-data-analysis-pca-ca-mca-and-visualization-r-software-and-data-mining">Quick Multivariate data analysis (PCA, CA, MCA) and visualization</a></li>
+<li><a href="https://stat.ethz.ch/R-manual/R-devel/library/stats/html/00Index.html">The R Stats Package</a> (<a href="http://stat.ethz.ch/R-manual/R-devel/library/stats/html/p.adjust.html">Adjust P-values for Multiple Comparisons</a>, <a href="http://fhqdddddd.blog.163.com/blog/static/18699154201093171158444/">多重检验中的FDR错误控制方法与p-value的校正及Bonferroni校正</a>)</li>
+<li>
+<p><a href="https://stats.idre.ucla.edu/r/faq/how-can-i-do-post-hoc-pairwise-comparisons-in-r/">How can I do post-hoc pairwise comparisons in R?</a></p>
+</li>
+<li>
+<p><a href="http://rcompanion.org/handbook/F_08.html">Kruskal–Wallis Test</a></p>
+</li>
+<li><a href="http://www.jerrydallal.com/lhsp/mc.htm">Multiple Comparison Procedures</a></li>
+</ul>
+<h2 id="cluster">Cluster</h2>
+<ul>
+<li><a href="https://eight2late.wordpress.com/2015/07/22/a-gentle-introduction-to-cluster-analysis-using-r/">A gentle introduction to cluster analysis using R</a></li>
+</ul>
+<h2 id="file-formats">File formats</h2>
+<ul>
+<li><a href="https://github.com/leeper/rio">rio</a> - A Swiss-army knife for data I/O</li>
+</ul>
+<p>reads xlsx/xls library(xslx)</p>
+<pre><code>data &lt;- read.xlsx(&quot;datafile.xlsx&quot;, 1)
+</code></pre>
+
+<pre><code>library(gdata)
+# Read first sheet
+data &lt;- read.xls(&quot;datafile.xls&quot;)
+</code></pre>
+
+<h2 id="misc">Misc</h2>
+<ul>
+<li><a href="http://stats.stackexchange.com/questions/8225/how-to-summarize-data-by-group-in-r">How to summarize data by group in R?</a></li>
+<li><a href="https://groups.google.com/forum/#!topic/ggplot2/qVE6Uxd_IFQ/discussion">Error in eval(expr, envir, enclos) : object &#8216;X' not found</a> solution: <code>ggplot(..., **environment = environment()**)</code></li>
+<li><a href="http://stackoverflow.com/questions/4236368/how-to-apply-a-function-to-every-row-of-a-matrix-or-a-data-frame-in-r">how to apply a function to every row of a matrix (or a data frame) in R</a></li>
+<li><a href="http://stackoverflow.com/questions/7395397/how-to-apply-function-over-each-matrix-element">How to apply function over each matrix element</a></li>
+<li><a href="http://stackoverflow.com/questions/20845409/how-do-i-pass-variables-to-a-custom-function-in-ddply">How do I pass variables to a custom function in ddply?</a></li>
+<li><a href="http://stackoverflow.com/questions/6778908/r-transposing-a-data-frame">R-Transposing a data frame</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../linux/" class="btn btn-neutral float-right" title="Linux">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../git/" class="btn btn-neutral" title="Git"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../git/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../linux/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
