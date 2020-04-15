@@ -1,6 +1,6 @@
 # Welcome to MkDocs
 
-For full documentation visit [mkdocs.org](https://mkdocs.org).
+For full documentation visit [mkdocs.org](https://mkdocs.org). [*data synchronization*](https://liyao9477.github.io/share_docs/)
 
 ## Commands
 
