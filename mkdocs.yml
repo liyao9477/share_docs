@@ -1,0 +1,30 @@
+site_name: liyao碎片机
+nav:
+    - Index: index.md    
+    - Git: git.md
+    - R: r.md
+    - Linux: linux.md
+    - Linux_cmd: linux_cmd.md
+    - Cmd_line: cmd_line.md
+    - Awe_python: awe_python.md
+    - Awe_spider: awe_spider.md
+    - Data_science: data_science2.md
+    - ML: machine_learning.md
+    - ML_tutor: ml_tutor.md
+    - Mysql_chefs: mysql_chefs.md
+    - Mysql_21m: 21m_mysql.md
+    - Front: front.md
+    - Math: math.md
+    - Statistic_python: statistic_python.md
+    - DM_DA: dm_da.md
+    - DM_R: dm_r.md
+    - DM_Python: dm_python.md
+    - Sci: sci.md
+    - Uti: utilities.md
+    - Web: web.md
+    - ajenti: ajenti.md
+    - Macos_app: macos_app.md
+    - r4ds: r4ds.md
+    - Python_spider: python_spider.md
+    - P_books: p_books.md
+theme: readthedocs
